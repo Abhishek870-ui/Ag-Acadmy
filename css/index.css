@@ -12,7 +12,7 @@ body{
 {
   background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
   text-align: center;
-  background-image: url('../img/background/wallpaperflare.com_wallpaper.jpg');
+  
 }
 .header ul{
   display: inline-flex;
@@ -84,8 +84,14 @@ body{
 }
 
 /* *****  This is a background section  ***** */
-
+.background{
+  width: 100%;
+}
 .background1{
+  width: 100%;
+  
+}
+.background1 img{
   width: 100%;
   
 }
