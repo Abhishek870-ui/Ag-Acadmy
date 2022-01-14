@@ -193,3 +193,26 @@
 .enroll .enroll2 .enroll5 h2{
   padding-top: 35%;
 }
+
+/* *****  This is a Courses section  ***** */
+.courses::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+.courses .courses1{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.courses .courses1 img{
+  width:100%;
+}
+.courses1 h3{
+  text-align: center;
+  margin: 5%;
+}
+.courses1{
+  background-image: linear-gradient(to right, #ff9966, #ff5e62);
+}
