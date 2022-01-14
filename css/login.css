@@ -81,9 +81,8 @@
     margin-left: 140px;
     background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
   }
-
+  
   /* *****  This is a background section  ***** */
-
   .background{
     width: 100%;
   }
@@ -122,61 +121,48 @@
   }
 
 
-/* ***** this is a Contact section ***** */
+  /* ***** this is a Contact section ***** */
+  .log1{
+      color: rgb(243, 58, 12);
+      text-align: center;
+      font-size: xx-large;
+      border: 2px solid rgb(101, 202, 3);
+      margin: 10% auto;
+      width: 80%;
+      background:linear-gradient(135deg, rgb(253, 223, 80) 20%, rgb(101, 202, 3) 80%);
 
-.contact1{
-    color: wheat;
-    margin: auto;
-    border: 2px solid tomato;
-    text-align: center;
-    width: 50%;
-    margin: 10%;
-    margin-left: 25%;
-    background:  repeating-radial-gradient(circle at 0 0,  #3a1c71 , #d76d77 , #ffaf7b  );
-} 
-.box{
+  }
+  .log1 input{
+      width: 45%;
+      background: transparent;
+      border: 1px solid black;
+      border-radius: 20px;   
+      font-size: x-large;
+      padding: 2%;
+  }
+  .box{
     margin: 5%;
 }
-.contact1 label{
+.log1 label{
     font-size: xx-large;
-    padding: 5%;
-    
-   
+    padding: 5%; 
 }
-.contact1 input{
+.log1 button{
     background: transparent;
-    width: 50%;
-    border: 1px solid black;
-    border-radius: 20px;   
-    font-size: x-large;
-    padding: 2%;
-}
-.contact1 textarea{
-    background: transparent;
-    width: 50%;
-    border: 1px solid black;
-    border-radius: 20px;   
-    font-size: x-large;
-    padding: 2%;
-}
-.contact1 button{
-    background: transparent;
-    width: 50%;
+    width: 40%;
     border: 1px solid black;
     border-radius: 20px;   
     font-size: x-large;
     padding: 2%;
     cursor: pointer;
 }
-.contact1 button:hover{
+.log1 button:hover{
     background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
-.contact1 button a{
+.log1 button a{
     text-decoration: none;
-    color: wheat;
+    color: rgb(14, 172, 245);
 }
-
-  
 /* *****  This is a Addressing section  ***** */
 .address{
     background-color: black;
@@ -214,7 +200,6 @@
     text-decoration: none;
     padding: 5%;
     background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
-   
   }
   .address .address2{
     float: left;
@@ -263,6 +248,4 @@
     margin-top: 3%;
     background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
     padding: 4%;
-  }
-  
-  
+  }  
