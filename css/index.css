@@ -108,3 +108,88 @@
   border: 2px solid burlywood;
   cursor: pointer;
 }
+.background2 button:hover{
+  color: antiquewhite;
+  
+}
+
+/* *****  This is a Enroll section  ***** */
+.enroll1{
+  text-align: center;
+  width: 40%;
+  margin-top: 15%;
+  margin-left: 5%;
+  display: inline-block;
+}
+.enroll1 h2{
+  font-family: Edwardian Script ITC;
+  font-size: 40px;
+}
+.enroll .enroll1 button{
+  background-image: linear-gradient(to right, #ff512f, #f09819);
+  font-size: 30px;
+  border-radius: 40px;
+  padding: 30px;
+  margin: 20px;
+  color:   #ff9966;
+  border: 2px solid burlywood;
+  cursor: pointer;
+}
+.enroll .enroll1 button:hover{
+  color: antiquewhite;
+}
+.enroll .enroll2{
+  width: 30%;
+  position: relative;
+  float: right;
+  margin-top: 10%;
+ 
+}
+.enroll .enroll2 .enroll3{
+  width: 50%;
+  height: 250px;
+  border : 3px double blue;
+  border-radius: 80%;
+  background: linear-gradient(to right, orange, yellow);
+  position: absolute;
+  right : 400px;
+  z-index: 1;
+  text-align: center;
+ 
+}
+.enroll .enroll2 .enroll3 h2{
+  padding-top: 25%;
+}
+.enroll .enroll2 .enroll4{
+  width: 50%;
+  height: 250px;
+  border : 3px double blue;
+  border-radius: 80%;
+  background: linear-gradient(to right, orange, yellow);
+  position: absolute;
+  right : 230px;
+   z-index: 2;
+   text-align: center;
+   
+  
+}
+.enroll .enroll2 .enroll4 h2{
+  padding-top: 25%;
+}
+.enroll .enroll2 .enroll5{
+  width: 50%;
+  height: 250px;
+  border : 3px double blue;
+  border-radius: 80%;
+  background: linear-gradient(to right, orange, yellow);
+  position: absolute;
+  right :  320px;
+   z-index: 3;
+   margin-top: 25%;
+   text-align: center;
+   
+  
+}
+.enroll .enroll2 .enroll5 h2{
+  padding-top: 35%;
+}
