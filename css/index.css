@@ -351,3 +351,10 @@
 .address .address4 p{
   padding: 3%;
 }
+/*  *****  This is a footer section  ***** */
+.footer{
+  text-align: center;
+  margin-top: 3%;
+  background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
+  padding: 4%;
+}
