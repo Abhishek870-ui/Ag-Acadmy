@@ -120,6 +120,13 @@ body{
   color: antiquewhite;
   
 }
+.background2 button a{
+  text-decoration: none;
+}
+.background2 button a:hover{
+  color: antiquewhite;
+  
+}
 
 /* *****  This is a Enroll section  ***** */
 .enroll1{
@@ -143,8 +150,12 @@ body{
   border: 2px solid burlywood;
   cursor: pointer;
 }
-.enroll .enroll1 button:hover{
+.enroll .enroll1 button a:hover{
   color: antiquewhite;
+}
+.enroll .enroll1 button a{
+  text-decoration: none;
+  color: #00b09b;
 }
 .enroll .enroll2{
   width: 30%;

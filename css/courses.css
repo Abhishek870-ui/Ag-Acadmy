@@ -117,7 +117,10 @@
     border: 2px solid burlywood;
     cursor: pointer;
   }
-  .background2 button:hover{
+  .background2 button a{
+    text-decoration: none;
+  }
+  .background2 button a:hover{
     color: antiquewhite;
     
   }

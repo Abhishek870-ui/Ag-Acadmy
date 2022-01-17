@@ -119,7 +119,13 @@
     color: antiquewhite;
     
   }
-
+  .background2 button a{
+    text-decoration: none;
+  }
+  .background2 button a:hover{
+    color: antiquewhite;
+    
+  }
 
   /* ***** this is a Contact section ***** */
   .log1{
