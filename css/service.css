@@ -1,0 +1,329 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-image: linear-gradient(to right,#7f7fd5, #86a8e7,#91eae4);
+  }
+  /* ***** this is a header section ***** */
+  .header
+  {
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+    text-align: center;
+    
+  }
+  .header ul{
+    display: inline-flex;
+    list-style: none;
+    color:white;
+  }
+  
+  .header ul li{
+        width: 120px;
+        margin: 15px;
+        padding: 15px;
+  }
+  .header ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  .active, .header ul li:hover{
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+    border-radius: 3px;
+  }
+  .header .fa{
+    margin-right: 8px;
+  }
+  .sub-menu-1
+  {
+    display: none;
+  }
+  .header ul li:hover .sub-menu-1
+  {
+    display: block;
+    position: absolute;
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+    margin-top: 15px;
+    margin-left: -15px;
+  }
+  .header ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+  }
+  .header ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+  }
+  .header ul li:hover .sub-menu-1 ul li:last-child
+  {
+    border-bottom: none;
+  }
+  .header ul li:hover .sub-menu-1 ul li a:hover{
+    color:#b2ff00 ;
+  }
+  .fa angle-right{
+    float: right;
+  }
+  .sub-menu-2
+  {
+    display: none;
+  }
+  .hover-me:hover .sub-menu-2
+  {
+    position: absolute;
+    display: block;
+    margin-top: -40;
+    margin-left: 140px;
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+  }
+  
+  /* *****  This is a background section  ***** */
+  .background{
+    width: 100%;
+    margin-top: 2%;
+  }
+  .background1{
+    width: 100%;
+    
+  }
+  .background1 img{
+    width: 100%;
+    
+  }
+  
+  .background2{
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+  }
+  .background2 h1{
+    font-family: Palace Script MT;
+    font-size: 80px;
+  }
+  .background2 button{
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+    font-size: 30px;
+    border-radius: 40px;
+    padding: 30px;
+    margin: 20px;
+    color:  rgba(4,189,228,1);
+    border: 2px solid burlywood;
+    cursor: pointer;
+  }
+  .background2 button:hover{
+    color: antiquewhite;
+    
+  }
+
+
+  /*  *****  This is a Kid section  ***** */
+.kid{
+  background-image: radial-gradient(circle, #8360c3,#2ebf91);
+  margin-top: 2%;
+  padding: 2%;
+  
+}
+.kid h1{
+  padding-left: 10%;
+  text-align: center;
+  font-size: 60px;
+  text-decoration: underline;
+  font-style: italic;
+  font-family: Palace Script MT;
+  color: blanchedalmond;
+
+}
+.kid1{
+  border: 1px solid black;
+  border-radius: 50px ;
+  width: 45%;
+  margin-top: 3%;
+  padding: 2%;
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: linear-gradient(to left,#005aa7,#fffde4 );
+  display: inline-block;
+  margin: 2%;
+}
+.kid1 p{
+  padding-top: 2%;
+}
+.kid1 button{
+    background-image: linear-gradient( 95.2deg, #a8ff78    26.8%,   #78ffd6 64% );
+    font-size: 30px;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 10px;
+    color:  rgba(4,189,228,1);
+    border: 2px solid rgb(15, 180, 245);
+    cursor: pointer;
+}
+.kid1 button a{
+  text-decoration: none;
+}
+.kid1 button a:hover{
+  color: antiquewhite;
+
+}
+
+/*  *****  This is a Mission section  *****   */
+.mission{
+  margin-top: 2%;
+  background: linear-gradient(to right bottom,#200122,#6f0000);
+}
+.mission1{
+  width: 40%;
+  padding-left: 2%;
+  display: inline-block;
+  padding-top: 2%;
+  
+}
+.mission1 h1{
+  font-size: 80px;
+  text-decoration: underline;
+  font-style: italic;
+  font-family: Palace Script MT;
+  text-align: center;
+  color: cornsilk;
+}
+.mission1 p{
+  padding: 2%;
+  font-size: 20px;
+  font-style: justify;
+  color: #fffde4;
+
+}
+.mission1 q{
+  font-size: 20px;
+  font-style: bold;
+  color: #fffde4;
+}
+.mission2{
+  width: 40%;
+  display: inline-block;
+  margin-left: 15%;
+}
+.mission2 img{
+  width: 100%;
+}
+
+/*  *****  This is a Research section  *****   */
+.res{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 3%;
+  background: linear-gradient(to right bottom,#0575e6  ,#021b79);
+}
+.res1{
+  width: 40%;
+  display: inline-block;
+  
+}
+.res1 img{
+  width: 100%;
+}
+.res2{
+  width: 40%;
+  display: inline;
+}
+.res3{
+  margin: 3%;
+  float: right;
+  text-align: center;
+}
+
+/* *****  This is a Addressing section  ***** */
+.address{
+    background-color: black;
+    color: wheat;
+    
+  }
+  .address::after {
+    content: "";
+    clear: both;
+    display: table;
+  
+  }
+  .address .address1{
+    float: left;
+    width:23%;
+    padding: 5px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .address .address1 h1{
+    padding: 2%;
+  }
+  .address .address1 p{
+    padding: 2%;
+  }
+  .address .address1 ul{
+    list-style-type: none;
+    padding: 2%;
+    
+  }
+  .address .address1 ul li{
+    display: inline;
+  }
+  .address .address1 ul li a{
+    text-decoration: none;
+    padding: 5%;
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+   
+  }
+  .address .address2{
+    float: left;
+    width:23%;
+    padding: 5px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 4%;
+  }
+  .address .address2 ul{
+    list-style-type: none;
+    font-size: 15px;
+  }
+  .address .address2 ul li{
+    padding: 2%;
+  }
+  .address .address3{
+    float: left;
+    width:23%;
+    padding: 5px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .address .address3 ul{
+    list-style-type: none;
+    font-size: 15px;
+  }
+  .address .address3 ul li{
+    padding: 2%;
+  }
+  .address .address4{
+    float: left;
+    width:23%;
+    padding: 5px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .address .address4 p{
+    padding: 3%;
+  }
+  /*  *****  This is a footer section  ***** */
+  .footer{
+    text-align: center;
+    margin-top: 3%;
+    background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
+    padding: 4%;
+  }  
