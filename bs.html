@@ -680,13 +680,276 @@
         </div>
 
         <div class="list-group-item list-group-item-success">
-            <p class="h3"></p>
-            <p></p>    
+            <p class="h3">Grid System</p>
+            <p>Grid System</p> 
+            <p>Screen Sizes(width in px)
+                <p>es		sm		md		lg		xl		xxl (B5.0 onw)</p>
+                <p><576	>=576	>=768	>=992	>=1200	>=1400</p>
+            </p>   
+            <p>Examplefor practice
+                <p>
+                    &lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+    &lt;head&gt;<br>
+        &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"&gt;<br>
+        &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"&gt;<br>
+        &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"&gt;<br>&lt;/script&gt;<br>
+        &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"&gt;<br>&lt;/script&gt;<br>
+        &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"&gt;<br>&lt;/script&gt;<br>        
+        &lt;style&gt;<br>
+            .bk
+            {
+                border-radius: 10px 0%;
+                background: linear-gradient(to left top,red,black);
+                color : white;
+                text-align: center;
+            }
+        &lt;/style&gt;<br>
+    &lt;/head&gt;<br>
+    &lt;body&gt;<br>
+        &lt;div class="container mt-5"&gt;<br>
+            &lt;div class="row row-cols-4"&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col1&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col2&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col3&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col4&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col5&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col6&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;!--
+            &lt;div class="row my-3"&gt;<br>
+                &lt;div class="col-sm-4 bk"&gt;<br>Col1&lt;/div&gt;<br>
+                &lt;div class="col-sm-4 bk"&gt;<br>Col2&lt;/div&gt;<br>
+                &lt;div class="col-sm-4 bk"&gt;<br>Col3&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="row my-3"&gt;<br>
+                &lt;div class="col-md-4 bk"&gt;<br>Col1&lt;/div&gt;<br>
+                &lt;div class="col-md-4 bk"&gt;<br>Col2&lt;/div&gt;<br>
+                &lt;div class="col-md-4 bk"&gt;<br>Col3&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="row my-3"&gt;<br>
+                &lt;div class="col-lg-4 bk"&gt;<br>Col1&lt;/div&gt;<br>
+                &lt;div class="col-lg-4 bk"&gt;<br>Col2&lt;/div&gt;<br>
+                &lt;div class="col-lg-4 bk"&gt;<br>Col3&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;!--
+            &lt;div class="row"&gt;<br>
+                &lt;div class="col bk"&gt;<br>Header&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="row my-3"&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col1&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col2&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="row my-3"&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col1&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col2&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col3&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="row my-3"&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col1&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col2&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col3&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col4&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="row my-3"&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col1&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col2&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col3&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col4&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col5&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col6&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="row my-3"&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col1&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col2&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col3&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col4&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col5&lt;/div&gt;<br>                
+            &lt;/div&gt;<br>
+
+            &lt;div class="row my-3"&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col1&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col2&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col3&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col4&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col5&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col6&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col7&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col8&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col9&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col10&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col11&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col12&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="row my-3"&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col1&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col2&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col3&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col4&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col5&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col6&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col7&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col8&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col9&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col10&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col11&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col12&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col13&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col14&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="row my-3"&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col1&lt;/div&gt;<br>
+                &lt;div class="col-8 bk"&gt;<br>Col2&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="row my-3"&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col1&lt;/div&gt;<br>
+                &lt;div class="col-6 bk"&gt;<br>Col2&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col3&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="row my-3"&gt;<br>
+                &lt;div class="col-2 bk"&gt;<br>Col1&lt;/div&gt;<br>
+                &lt;div class="col-2 bk"&gt;<br>Col2&lt;/div&gt;<br>
+                &lt;div class="col-2 bk"&gt;<br>Col3&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="row my-3"&gt;<br>
+                &lt;div class="col-2 bk"&gt;<br>Col1&lt;/div&gt;<br>
+                &lt;div class="col"&gt;<br>&lt;/div&gt;<br>
+                &lt;div class="col-2 bk"&gt;<br>Col3&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="row my-3"&gt;<br>
+                &lt;div class="col-4"&gt;<br>&lt;/div&gt;<br>
+                &lt;div class="col-6 bk"&gt;<br>Col2&lt;/div&gt;<br>
+                &lt;div class="col bk"&gt;<br>Col3&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+
+            --&gt;<br>
+        &lt;/div&gt;<br>
+    &lt;/body&gt;<br>
+&lt;/html&gt;<br>
+
+                </p>
+            </p>
         </div>
 
         <div class="list-group-item list-group-item-danger">
-            <p class="h3"></p>
-            <p></p>    
+            <p class="h3">forms</p>
+            <p><li>form-group</li>
+            <li>form-control</li>
+            <li>form-text</li>
+            <li>form-check</li>
+            <li>form-check-inline</li>
+            <li>form-check-label</li></p>    
+            <p>Example for practice
+                <p>&lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                            &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"&gt;<br>
+                            &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"&gt;<br>
+                            &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"&gt;<br>&lt;/script&gt;<br>
+                            &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"&gt;<br>&lt;/script&gt;<br>
+                            &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"&gt;<br>&lt;/script&gt;<br>        
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                            &lt;div class="container mt-5"&gt;<br>
+                                &lt;form&gt;<br>
+                                    &lt;!--Username--&gt;<br>
+                                    &lt;div class="form-group row"&gt;<br>
+                                        &lt;label class="col-2"&gt;<br>Username &lt;/label&gt;<br>
+                                        &lt;div class="col-3"&gt;<br>
+                                            &lt;input type = "text" class="form-control"&gt;<br>
+                                            &lt;small class="form-text text-danger"&gt;<br>Enter Username&lt;/small&gt;<br>
+                                        &lt;/div&gt;<br>
+                                    &lt;/div&gt;<br>
+                    
+                                    &lt;!--Password--&gt;<br>
+                                    &lt;div class="form-group row"&gt;<br>
+                                        &lt;label class="col-2"&gt;<br>Password &lt;/label&gt;<br>
+                                        &lt;div class="col-3"&gt;<br>
+                                            &lt;input type="password" class="form-control"&gt;<br>
+                                            &lt;small class="form-text text-danger"&gt;<br>Enter Password&lt;/small&gt;<br>
+                                        &lt;/div&gt;<br>
+                                    &lt;/div&gt;<br>
+                    
+                                    &lt;!--Email--&gt;<br>
+                                    &lt;div class="form-group row"&gt;<br>
+                                        &lt;label class="col-2"&gt;<br>E-mail&lt;/label&gt;<br>
+                                        &lt;div class="col-3"&gt;<br>
+                                            &lt;div class="input-group"&gt;<br>
+                                                &lt;input type="email" class="form-control"&gt;<br>
+                                                &lt;div class="input-group-append"&gt;<br>
+                                                    &lt;span class="input-group-text"&gt;<br>
+                                                        @tcs.com
+                                                    &lt;/span&gt;<br>
+                                                &lt;/div&gt;<br>
+                                            &lt;/div&gt;<br>
+                                            &lt;small class="form-text text-danger"&gt;<br>Enter e-mail&lt;/small&gt;<br>
+                                        &lt;/div&gt;<br>
+                                    &lt;/div&gt;<br>
+                    
+                                    &lt;!--Languages--&gt;<br>
+                                    &lt;div class="form-group row"&gt;<br>
+                                        &lt;label class="col-2"&gt;<br>Languages&lt;/label&gt;<br>
+                                        &lt;div class="col-3"&gt;<br>
+                                            &lt;div class="form-check form-check-inline"&gt;<br>
+                                                &lt;input type="checkbox" class="form-check-input mx-2"&gt;<br>
+                                                &lt;label class="form-check-label"&gt;<br>Punjabi&lt;/label&gt;<br>
+                                            
+                                                &lt;input type="checkbox" class="form-check-input mx-2"&gt;<br>
+                                                &lt;label class="form-check-label"&gt;<br>Hindi&lt;/label&gt;<br>
+                                            
+                                                &lt;input type="checkbox" class="form-check-input mx-2"&gt;<br>
+                                                &lt;label class="form-check-label"&gt;<br>English&lt;/label&gt;<br>
+                                            &lt;/div&gt;<br>
+                                        &lt;/div&gt;<br>
+                                    &lt;/div&gt;<br>
+                    
+                                    &lt;!--Gender--&gt;<br>
+                                    &lt;div class="form-group row"&gt;<br>
+                                        &lt;label class="col-2"&gt;<br>Gender&lt;/label&gt;<br>
+                                        &lt;div class="col-3"&gt;<br>
+                                            &lt;div class="form-check form-check-inline"&gt;<br>
+                                                &lt;input type="radio" class="form-check-input mx-2" name='gender'&gt;<br>
+                                                &lt;label class="form-check-label"&gt;<br>Male&lt;/label&gt;<br>
+                                            
+                                                &lt;input type="radio" class="form-check-input mx-2" name='gender'&gt;<br>
+                                                &lt;label class="form-check-label"&gt;<br>Female&lt;/label&gt;<br>
+                                                                        
+                                            &lt;/div&gt;<br>
+                                        &lt;/div&gt;<br>
+                                    &lt;/div&gt;<br>
+                    
+                                    &lt;!--Address--&gt;<br>
+                                    &lt;div class="form-group row"&gt;<br>
+                                        &lt;label class="col-2"&gt;<br>Address&lt;/label&gt;<br>
+                                        &lt;div class="col-3"&gt;<br>
+                                            &lt;textarea class="form-control" rows = 3&gt;<br>&lt;/textarea&gt;<br>
+                                        &lt;/div&gt;<br>
+                                    &lt;/div&gt;<br>
+                    
+                                    &lt;!--Submit--&gt;<br>
+                                    &lt;div class="form-group row"&gt;<br>
+                                        &lt;div class="col-5 text-center"&gt;<br>
+                                            &lt;input type="submit" class="btn btn-success"&gt;<br>
+                                        &lt;/div&gt;<br>
+                                    &lt;/div&gt;<br>
+                                &lt;/form&gt;<br>
+                            &lt;/div&gt;<br>
+                        &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                    </p>
+            </p>
         </div>
 
         <div class="list-group-item list-group-item-warning">

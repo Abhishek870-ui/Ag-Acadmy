@@ -672,6 +672,395 @@
         </div>
 
         <div class="list-group-item list-group-item-light">
+            <p class="h3">Constructor Functions:- </p>
+            <p><li>Constructor Function is used to create class like structure.</li>
+            <li>In constructor function everything (variables and functions) should
+                start with 'this' keyword.</li>
+            <li>We can create object to constructor using 'new' keyword.</li></p>    
+            <p>Example for practice <p>
+                /*<br>
+//Eg01<br>
+function class_one()<br>
+{<br>
+    this.wish = "Welcome to contructor functions"<br>
+}<br>
+var obj = new class_one()<br>
+console.log(obj.wish)<br>
+
+//Eg02<br>
+function class_one()<br>
+{<br>
+    this.sub_one = "Angular"<br>
+    this.sub_two = "NodeJS"<br>
+    this.sub_three = "MongoDB"<br>
+}<br>
+var obj = new class_one()<br>
+console.log(obj.sub_one, obj.sub_two,obj.sub_three)<br>
+
+//Eg03<br>
+function class_one()<br>
+{
+    this.myWish = () => {<br>
+        return "Good afternoon"<br>
+    }<br>
+
+    this.yourWish = ()=>{<br>
+        return "Happy birthday"<br>
+    }<br>
+}<br>
+
+var obj = new class_one()<br>
+console.log(obj.myWish)<br>
+console.log(obj.myWish())<br>
+console.log(obj.yourWish())<br>
+
+//Eg04<br>
+function class_one()<br>
+{<br>
+    this.sub_one = `Javascript`<br>
+    this.wish = function(){<br>
+        return `Welcome to ${this.sub_one}`<br>
+    }<br>
+}<br>
+console.log(new class_one().wish())<br>
+
+*/<br>
+//Eg05<br>
+function class_one(arg1, arg2, arg3)<br>
+{<br>
+    this.sub_one = arg1<br>
+    this.sub_two = arg2<br>
+    this.sub_three = arg3<br>
+}<br>
+let obj = new class_one(1,2.3,'abc')<br>
+console.log(obj.sub_one, obj.sub_two, obj.sub_three)<br>
+let obj2 = new class_one("ReactJS",3000,false)<br>
+console.log(obj2.sub_one, obj2.sub_two, obj2.sub_three)<br>
+
+
+            </p></p>
+        </div>
+
+        <div class="list-group-item list-group-item-primary">
+            <p class="h3">Prototype</p>
+            <p>Prototype is a property which adds members to constructor dynamically.</p>
+            
+            <p>Example for practice
+                <p>
+                    
+//Eg01<br>
+function class_one(){}<br>
+class_one.prototype.wish = `Welcome to Prototype`<br>
+console.log(new class_one().wish)<br>
+<br>
+//Eg02<br>
+class_one.prototype.sub_one = "Angular"<br>
+class_one.prototype.sub_two = "NodeJS"<br>
+class_one.prototype.sub_three = "MongoDB"<br>
+let obj = new class_one()<br>
+console.log(obj.sub_one, obj.sub_two, obj.sub_three)<br>
+<br>
+//Eg03<br>
+class_one.prototype.getWish = () =>{<br>
+    return 'good evening'<br>
+}<br>
+console.log(obj.getWish())<br>
+<br>
+Prototype Chaining:-<br>
+ - Nesting one constructor prototype to another constructor<br><br>
+   is called as prototype chaining.<br>
+ - Concept of inheritance is achieved with prototype chaining.<br>
+ <br><br>
+/*<br>
+//Eg01<br>
+function class_one(){}<br>
+class_one.prototype.wish = `Welcome to Prototype`<br>
+console.log(new class_one().wish)<br>
+<br>
+//Eg02<br>
+class_one.prototype.sub_one = "Angular"<br>
+class_one.prototype.sub_two = "NodeJS"<br>
+class_one.prototype.sub_three = "MongoDB"<br>
+let obj = new class_one()<br>
+console.log(obj.sub_one, obj.sub_two, obj.sub_three)<br>
+<br>
+//Eg03<br>
+class_one.prototype.getWish = () =>{<br>
+    return 'good evening'<br>
+}<br>
+console.log(obj.getWish())<br>
+<br>
+//Eg01<br>
+function class_one(){}<br>
+class_one.prototype.fun_one = function(){<br>
+    return "I am from function one"<br>
+}<br>
+<br><br>
+function class_two(){}<br>
+class_two.prototype = Object.create(class_one.prototype)<br>
+class_two.prototype.fun_two = function(){<br>
+    return "I am from function two"<br>
+}<br>
+<br>
+obj = new class_two()<br>
+console.log(obj.fun_one())<br>
+console.log(obj.fun_two())<br>
+<br>
+//Eg02<br>
+function class_one(){}<br>
+class_one.prototype.var_one = 12<br>
+function class_two(){}<br>
+class_two.prototype = Object.create(class_one.prototype)<br>
+class_two.prototype.var_two = 14.7<br>
+function class_three(){}<br>
+class_three.prototype = Object.create(class_two.prototype)<br>
+class_three.prototype.var_three = 'abc'<br>
+<br>
+var obj = new class_three()<br>
+console.log(obj.var_one, obj.var_two, obj.var_three)<br>
+*/<br>
+
+<br><br>
+//Eg03<br>
+function class_one(){}<br>
+class_one.prototype.dbFun = () =>{<br>
+    return "MySql data soon"<br>
+}<br>
+<br><br>
+function class_two(){}<br>
+class_two.prototype = Object.create(class_one.prototype)<br>
+class_two.prototype.dbFun = () =>{<br>
+    return "MongoDB data soon...!"<br>
+}
+<br>
+let obj = new class_two()<br>
+console.log(obj.dbFun())<br>
+
+
+                </p>
+            </p>
+        </div>
+
+        <div class="list-group-item list-group-item-secondary">
+            <p class="h3">
+                Passing parameters to functions</p>
+            <p>1. Default parameters
+                <p>It allows named parameters to be intialysed with default
+                    values if no value or undefined is passed.
+                 <p>function fun_one(arg1 = 10, arg2 = "FullStack", arg3 = "Angular")<br>
+                    {<br>
+                        console.log(arg1, arg2, arg3)<br>
+                    }<br>
+                    
+                    fun_one()                               //10 FullStack Angular<br>
+                    fun_one(25)                             //25 FullStack Angular<br>
+                    fun_one(undefined,"MERN")               //10 MERN Angular<br>
+                    fun_one(undefined,undefined,undefined)  //10 FullStack Angular<br>
+                    fun_one(null, null, null)               //null null null<br>
+                    fun_one(null, undefined, "MongoDb")     //null FullStack MongoDb<br>
+                    fun_one(undefined,'undefined',undefined)//10 undefined Angular
+                </p>
+            <p>
+                2. Optional Parameters
+                <p><li> While calling a function no need to pass all arguments.</li>
+                <li>We can keep few arguments as optional.</li>
+                <li>Optional parameters instroduced in ES6.
+                </li></p>
+                <p>
+                    function fun_one(arg1, arg2, arg3)<br>
+{
+    console.log(arg1, arg2, arg3)<br>
+}
+
+fun_one()                               //undefined undefined undefined<br>
+fun_one("Hello_1")                      //Hello_1 undefined undefined<br>
+fun_one(null,"Hello_2")                 //null Hello_2 undefined<br>
+fun_one(10, 15.7,"MEAN")                //10 15.7 MEAN<br>
+fun_one(null, null, null)               //null null null<br>
+                </p>
+            </p>
+            <p>
+                
+3. Rest Parameters
+<p>
+    <li> - it is improved way to handle function parameters.</li>
+    <li> It allows us to represent infinite number of arguments as an array.</li>
+    <li>rest parameters represented by '...'</li>
+</p>
+<p>
+    function fun_one(...arg)<br>
+{<br>
+    console.log(arg)
+}<br>
+fun_one("Angular")                          //[ 'Angular' ]<br>
+fun_one()                                   //[]<br>
+fun_one(`Angular`,`FullStack`)              //[ 'Angular', 'FullStack' ]<br>
+fun_one(undefined,null)                     //[ undefined, null ]<br>
+*/<br>
+
+function fun_one(arg1, arg2 = "Hello_2",...arg3)<br>
+{<br>
+    console.log(arg1, arg2, arg3)<br>
+}<br>
+fun_one("Hello_1")                                  //Hello_1 Hello_2 []<br>
+fun_one("Hello_1",undefined,"Hello_3")              //Hello_1 Hello_2 [ 'Hello_3' ]<br><br>
+fun_one("Hello_1","Hello_2","Hello_3","Hello_4")    //Hello_1 Hello_2 [ 'Hello_3', 'Hello_4' ]<br>
+fun_one(undefined,undefined,undefined)              //undefined Hello_2 [ undefined ]<br>
+fun_one(undefined,undefined,[1,2,3],[4,5,6])
+//function fun_one(...arg1, ...arg2){}              //SyntaxError: Rest parameter must be last formal parameter<br>
+//function fun_one(...arg1, arg2){}                 //SyntaxError: Rest parameter must be last formal parameter<br>
+
+
+
+</p>
+            </p>
+        </p>
+            </p>    
+        </div>
+
+        <div class="list-group-item list-group-item-success">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-danger">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-warning">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-info">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-dark">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-light">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+        <div class="list-group-item list-group-item-primary">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-secondary">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-success">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-danger">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-warning">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-info">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-dark">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-light">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+        <div class="list-group-item list-group-item-primary">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-secondary">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-success">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-danger">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-warning">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-info">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-dark">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-light">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+        <div class="list-group-item list-group-item-primary">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-secondary">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-success">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-danger">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-warning">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-info">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-dark">
+            <p class="h3"></p>
+            <p></p>    
+        </div>
+
+        <div class="list-group-item list-group-item-light">
             <p class="h3"></p>
             <p></p>    
         </div>
