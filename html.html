@@ -39,9 +39,35 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
+ 
+
 </head>
 <!-- *****  This is a Body section  *****  -->
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- *****  This is a script   section for go to top button  *****  -->
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
 
     <!-- *****  This is a Header section  *****  -->
 
@@ -231,126 +257,515 @@
                         <li>< title>		Document title</li>
                         <li>< link/>		Link to external document</li>
                         <li>< meta/>		Meta information</li>
+                        <li>Attributes 		href, rel, type  e.g. Displaying favicon</li>
                         <li>< style>		Used for styling</li>
                         <li>< script>		Used to provide script</li>
                     </ol>
                 </li>    
             </div>
 
+            
+            <div class="list-group-item list-group-item-info">
+                <p class="h3">Favicon </p>
+                <p><li>it is a graphical image associates with title of web page </li>
+                <li>its size should be 16 * 16 px or 32*32 px.</li>
+                <li>&lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;  </li>
+                <li>Sites for favicon image 1. Clipart 2. Favicon</li>
+                <li>Code of path of an image which is saved in different folder </li>
+                <li>&lt;link rel="shortcut icon" href="file:///E:\PICTURES\20181119_120136.jpg" type="image/x-icon"&gt;</li>
+                <li>Code for favicon example
+                    <li>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                            &lt;title&gt;<br>Favicon Example&lt;/title&gt;<br>
+                            &lt;link rel="shortcut icon" href="a.png" type="image/x-icon"&gt;<br>  
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                            hello
+                            &lt;h1&gt;<br>Example of favicon command&lt;/h1&gt;<br>
+
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+
+
+                    </li>
+                </li></p>
+
+            </div>
+
             <div class="list-group-item list-group-item-dark">
-                <p class="h3">html types of Heading tags</p>
-                <ul class="white-color">
-                    < h1 > heading 1 < /h1 ><br>
-                    < h2 > heading 2< /h2 > <br>
-                    < h3 > heading 3 < /h3 ><br>
-                    < h4 > heading 4< /h4 > <br>
-                    < h5 > heading 5 < /h5 ><br>
-                    < h6 > heading 6< /h6 > <br>  
-            </ul>  
-            </div>
-
-            <div class="list-group-item list-group-item-light">
-                <p class="h3">background-color and background image in html</p>
-                <li>background = "img-path" </li>
-   <li> bg-color = "red"</li>   
-            </div>
-
-            <div class="list-group-item list-group-item-white">
-                <p class="h3">html - Symbols</p>
-                <li>& copy ;</li>
-       <li> & reg ;</li>
-      <li> & # 8482 ; </li>   
-            </div>
-
-            <div class="list-group-item list-group-item-white-50">
-                <p class="h3">html - alignment</p>
-                <li>align="left"</li>
-                <li> align="center"</li>
-               <li> align="right" </li>   
-            </div>
-
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3">blank spance in html</p>
-                <li>& nbsp ;</li>   
-            </div>
-
-            <div class="list-group-item list-group-item-secondary">
-                <p class="h3">Paragraph alignment in html</p>
-                <li>align = "justify"</li>
-       <li> align = "center"</li>
-      <li> align = "right" </li>   
-            </div>
-
-            <div class="list-group-item list-group-item-success">
-                <p class="h3">Input Tags</p>
-                <li>input type="text"</li>
-                <li> input type="password"</li>
-               <li> input type="button" </li>
-               <li>input type="checkbox"</li>
-               <li>input type="date"</li>
-               <li>input type="datetime-local"</li>
-               <li>input type="email"</li>
-               <li>input type="file"</li>
-               <li>input type="hidden"</li>
-               <li>input type="image"</li>
-               <li>input type="month"</li>
-               <li>input type="url"</li>
-               <li>input type="week"</li>
-               <li>input type="time"</li>
-               <li>input type="tel"</li>
-               <li>input type="search"</li>
-               <li>input type="reset"</li>
-               <li>input type="range"</li>
-               <li>input type="radio"</li>
-               <li>input type="number"</li>   
-            </div>
-
-            <div class="list-group-item list-group-item-danger">
-                <p class="h3">Dropdown-list</p>
-                <li> < select ></li>
-       <li>< option > anything < /option ></li>
-       <li>< option > anything < /option ></li>
-        <li> < /select > </li>  
-            </div>
-
-            <div class="list-group-item list-group-item-warning">
-                <p class="h3">Difference between checkbox and radio</p>
+                <p class="h3">Meta tag</p>
                 <p>
-                    <li> < input type="checkbox" name = "chess" >chess</li>
-       <li> < input type="checkbox" name = "ludo" >ludo </li>
-      <li>  < input type="checkbox" name = "match" >match </li>
+                    <li>Meta data is data about data.</li>
+                    <li>Metadata is not displayed on web page but it can be machine parsable (understandable).</li>
+                    <li>&lt;meta/&gt; tag provides metadata about html document</li>
+                    <li>Meta Attributes
+                        <li>Meta keywords</li>
+                        <li>Meta description</li>
+                        <li>Meta author</li>
+                        <li>Meta title</li>
+                        <li>Meta charset</li>
+                        <li>Meta viewport</li>
+                    </li>
                 </p>    
-
-                <p><li> < input type="radio" name = "opt" >chess </li>
-                    <li> < input type="radio" name = "opt" >ludo </li>
-                     <li> < input type="radio" name = "opt" >match </li></p>
-            </div>
-
-            <div class="list-group-item list-group-item-info">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-dark">
-                <p class="h3"></p>
-                <p></p>    
             </div>
 
             <div class="list-group-item list-group-item-light">
-                <p class="h3"></p>
-                <p></p>    
+                <p class="h3">style</p>
+                <p>
+                    <li>It is used to apply  styles to html documents</li>
+                    <li>It is a paired tag.</li>
+                    <li>Code 
+                        <li>
+                            &lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;!-- this is a head section --&gt;<br>
+&lt;head&gt;<br>
+	&lt;title&gt;<br>font example&lt;/title&gt;<br>
+	&lt;style&gt;<br>
+		p{
+			color: red;
+			font-family: candara;
+			font-size: 50px;
+		}
+		body{
+			background-color: black;
+		}
+		h1{
+			color: black;
+			font-family: lucida calligraphy;
+			font-size: 120px;
+			text-shadow: 0px 0px 5px red;
+		}
+                &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;!-- this is a body section --&gt;<br>
+            &lt;body&gt;<br>
+                &lt;p&gt;<br>Wlecome&lt;/p&gt;<br>
+                &lt;h1&gt;<br>Font example&lt;/h1&gt;<br>
+
+            &lt;/body&gt;<br>
+            &lt;/html&gt;<br>
+
+
+                        </li>
+                    </li>
+                </p>    
             </div>
 
-            <div class="list-group-item list-group-item-white">
-                <p class="h3"></p>
-                <p></p>    
+     
+
+            <div class="list-group-item list-group-item-primary">
+                <p class="h3">Script</p>
+                <p>It is a paired tag.</p>  
+                <p>it is used to apply script to html page.</p>  
             </div>
 
-            <div class="list-group-item list-group-item-white-50">
-                <p class="h3"></p>
-                <p></p>    
+            <div class="list-group-item list-group-item-secondary">
+                <p class="h3">Body section</p>
+                <p>
+                    <li>It contains &lt;body&gt; tag as root elements</li>
+                    <li>This section contains contents of html document, such as text, hyperlinks, images, special characters, lists, forms etc.</li>
+                    <li> &lt;body&gt; is paired tag.</li>
+                    <li>
+                        <table class="table-bordered table-hover table-dark m-2">
+                            <thead>
+                                <tr>
+                                    <th>Attributes</th>
+                                    <th>parameters</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Background</td>
+                                    <td>image path</td>
+                                </tr>
+                                <tr>
+                                    <td>Bgcolor</td>
+                                    <td>color name/ code</td>
+                                </tr>
+                                <tr>
+                                    <td>Text</td>
+                                    <td>color name/ code</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </li>
+                </p>    
             </div>
+
+            <div class="list-group-item list-group-item-success">
+                <p class="h3">Color codes</p>
+                <p>
+                    <li>Html color are defined in 24bit RGB values.</li>
+                    <li>These values are represented in hexadecimal forms.</li>
+                    <li>Values start with #</li>
+                    <li>0 is the lowest values.</li>
+                    <li>F is the largest/highest value</li>
+                </p> 
+                <p>
+                    <table class="table-bordered table-hover table-dark m-2">
+                        <thead>
+                            <tr>
+                                <th>R</th>
+                                <th>G</th>
+                                <th>B</th>
+                                <th>color name</th>
+                                <th>color code</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#FF</td>
+                                <td>FF		</td>
+                                <td>FF		</td>
+                                <td>WHITE		</td>
+                                <td>#FFFFFF</td>
+                            </tr>
+                            <tr>
+                                <td>#00		</td>
+                                <td>00		</td>
+                                <td>00		</td>
+                                <td>BLACK		</td>
+                                <td>#000000</td>
+                            </tr>
+                            <tr>
+                                <td>#FF		</td>
+                                <td>00		</td>
+                                <td>00		</td>
+                                <td>RED			</td>
+                                <td>#FF0000</td>
+                            </tr>
+                           
+                            
+                        </tbody>
+                    </table>
+                </p>   
+            </div>
+
+            <div class="list-group-item list-group-item-danger">
+                <p class="h3">HTML 5 special character(Entities)</p>
+                <p>
+                    <li>Character entities can be typed as either numbered entity or named entity</li>
+                    <li>All entities begin with ‘&’ and end with ‘;’</li>
+                    <li>E.g. & copy;   	& reg;		& trade;</li>
+                    <li>& #169;	& #174;	& #8482;</li>
+                    <li>Website link http://www.columbia.edu/kermit/ucs2.html</li>
+                    <li>But code should be in hexadecimal form</li>
+                    <li>Code is 
+                        <p>&lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+                            &lt;!-- this is a head section --&gt;<br>
+                            &lt;head&gt;<br>
+                                &lt;title&gt;<br>Html enities&lt;/title&gt;<br>
+                                &lt;!-- this is a meta section --&gt;<br>
+                                  &lt;meta charset="UTF-8"&gt;<br>
+                                  &lt;meta name="description" content=""&gt;<br>
+                                  &lt;meta name="keywords" content=""&gt;<br>
+                                  &lt;meta name="author" content=""&gt;<br>
+                                  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;!-- this is a body section --&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;<br>&copy;  &reg;  &trade;&lt;/p&gt;<br>
+                            &lt;p&gt;<br>&#169;  &#174;  &#8482;  &#2315; &#176;&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;<br>
+                            
+                            </p>
+                    </li>
+                </p>    
+            </div>
+
+            <div class="list-group-item list-group-item-warning">
+                <p class="h3">HTML Headings</p>
+                <p>
+                    <li>In HTML there are six type of heading tags.</li>
+                    <li>H1,H2,H3,H4,H5,H6</li>
+                    <li>All Headings tags are paired tags.</li>
+                    <li>Attributes		Parameters</li>
+                    <li>Align			left, center,   right</li>
+                </p>    
+            </div>
+
+            <div class="list-group-item list-group-item-info">
+                <p class="h3">HTML Paragraph(&lt;p&gt; tag)</p>
+                <p>
+                    <li>It is used to divide text into different paragraphs.</li>
+                    <li>It is a paired tags.</li>
+                    <li>Attributes			Parameters</li>
+                    <li>Align				left, right,center,justify</li>
+                </p>    
+            </div>
+
+            <div class="list-group-item list-group-item-dark">
+                <p class="h3">Line Brake(&lt;br&gt; tag)</p>
+                <p>
+                    <li>&lt;br&gt; stands for breaks.</li>
+                    <li>It is used to break a line and shift following text to next line.</li>
+                    <li>It is a non-paired tag.</li>
+                </p>    
+            </div>
+
+            <div class="list-group-item list-group-item-light">
+                <p class="h3">Non-Breaking Space (& nbsp;)</p>
+                <p>
+                    <li>It is used to insert more than one spaces.
+                        
+                        </li>
+                    <li>It is special character entity</li>
+                </p>    
+            </div>
+
+     
+
+            <div class="list-group-item list-group-item-primary">
+                <p class="h3">HTML Horizontal rule(< hr> tag)</p>
+                <p>
+                    <li>This tag is used to draw a line across the web page.</li>
+                    <li>It is a non-paired tag.</li>
+                    <li>Attribute		Parameters</li>
+                    <li>Color			color name/code</li>
+                    <li>Size			px</li>
+                    <li>Width			% / px</li>
+                    <li>Align			left, center, right</li>
+                    <li>Noshade		noshade</li>
+                    <li>Note :- Noshade is working with only noshade not with color names.</li>
+                </p>    
+            </div>
+
+            <div class="list-group-item list-group-item-secondary">
+                <p class="h3">User Inputs</p>
+                <p>To accept inputs from user, generally we use forms.</p>    
+            </div>
+
+            <div class="list-group-item list-group-item-success">
+                <p class="h3">HTML forms(< form> tag)</p>
+                <p>
+                    <li>This tag defines a form that is used to collect user inputs.</li>
+                    <li>It is a paired tag.</li>
+                    <li>Form Attributes
+                        <li>Method</li>
+                        <li>Action</li>
+                        <li>Target</li>
+                        <li>Encrypt</li>
+                    </li>
+                    <li>< input /> tag
+                        <li>Attributes Parameters</li>
+                        <li>Name				any name</li>
+                        <li>Value				any value</li>
+                        <li>Size				px
+                            <li>Max length			number</li>
+                            <li>Rows				number</li>
+                            <li>Cols				number</li>
+                            <li>Readonly			true/false</li>
+                            <li>Disabled			disabled</li>
+                            <li>Checked			checked</li>
+                            <li>Multiple			true/false</li>
+                        </li>
+                        </li>
+                    
+                </p>    
+            </div>
+
+            <div class="list-group-item list-group-item-danger">
+                <p class="h3">Textarea(< textarea>)</p>
+                <p>Multiple textbox</p> 
+                <p>< textarea rows=”5” cols=”45”>…< /textarea></p>   
+            </div>
+
+            <div class="list-group-item list-group-item-warning">
+                <p class="h3">Dropdown list tag</p>
+                <p>< select> tag is used to create dropdown list<br>
+                    <   option> tag inside select element define the available option in the list.<br>
+                    < select> and < option> both tag are paired tag.<br>
+                    </p>    
+            </div>
+
+            <div class="list-group-item list-group-item-info">
+                <p class="h3">< select> tag </p>
+                <p>Attributes		Parameters<br>
+                    Disabled		disabled<br>
+                    Multiple		multiple<br>
+                    Size			number(number of visible option)
+                    </p>    
+            </div>
+
+            <div class="list-group-item list-group-item-dark">
+                <p class="h3">< option> tag</p>
+                <p>Attribute		Parameters<br>
+                    Disabled 		disabled<br>
+                    Label			text<br>
+                    Selected		selected<br>
+                    Value			text<br>
+                    </p>    
+            </div>
+
+            <div class="list-group-item list-group-item-light">
+                <p class="h3">< optgroup>tag</p>
+                <p>It is used to group logically related option in the dropdown list<br>
+                    For longlist options group of related options are easier for user to handle.<br>
+                    Attributes		Parameters<br>
+                    Disabled		disabled<br>
+                    Label			text<br>
+                    </p>    
+            </div>
+
+     
+
+            <div class="list-group-item list-group-item-primary">
+                <p class="h3">Radio control</p>
+                <p>Radio buttons are used when out of many options just one option required to be selected<br>
+                    This are created using HTML input tag ( type = “radio” )<br>
+                    </p>    
+            </div>
+
+            <div class="list-group-item list-group-item-secondary">
+                <p class="h3">Checkbox</p>
+                <p>Checkboxes are used when more than one options are required<br>
+                    These are created using HTML input tag (type = “checkbox”)<br>
+                    </p>    
+            </div>
+
+            <div class="list-group-item list-group-item-success">
+                <p class="h3">< Fieldset></p>
+                <p>It defines group of logically related elements <br>
+                    Elements are grouped inside a box<br>
+                    It is a paired tag<br>
+                    </p>    
+            </div>
+
+            <div class="list-group-item list-group-item-danger">
+                <p class="h3">< legend></p>
+                <p>It is used with field set to give title to each set of fields<br>
+                    It is a paired tag.<br>
+                    Attributes		Parameters<br>
+                    Align			right, left, center<br>
+                    </p>    
+            </div>
+
+            <div class="list-group-item list-group-item-warning">
+                <p class="h3">HTTP ( Hypertext Transfer Protocol )</p>
+                <p>It is used to enable/establish communication between client and server<br>
+                    HTTP works as request-response protocol between client and server<br>
+                    A web browser is client<br>
+                    The computer who hosts the website is server<br>
+                    </p>    
+            </div>
+
+            <div class="list-group-item list-group-item-info">
+                <p class="h3">HTTP request methods</p>
+                <p>There are various methods of HTTP requests<br>
+                    E.g. GET, POST, PUT, UPDATE, DELETE, CONNECT, … etc.<br>
+                    Of which two methods are commonly used for request – response between client and server.<br>
+                    Get method<br>
+                    Post method<br>
+                    </p>    
+            </div>
+
+            <div class="list-group-item list-group-item-dark">
+                <p class="h3">Action Attribute</p>
+                <p>This attribute is used to specify url of the server page to which we want to send our form data.</p>    
+            </div>
+
+            <div class="list-group-item list-group-item-light">
+                <p class="h3">Get Methods</p>
+                <p>In this methods there is no security for data.<br>
+                    This methods can send only limited data(2MB)<br>
+                    It can carry row data from client to server.<br>
+                    
+                    Notes:-<br>
+                    GET requests can be cached.<br>
+                    GET remain in browser history.<br>
+                    GET requests can be bookmarked.<br>
+                    GET requests should not deal with sensitive data.<br>
+                    GET requests length is rest recited.<br>
+                    GET requests have excellent performance<br>
+                    GET requests cannot upload images. <br>
+                    </p>    
+            </div>
+
+     
+
+            <div class="list-group-item list-group-item-primary">
+                <p class="h3">POST request</p>
+                <p>In this method we have security for data.<br>
+                    This method can send bulk of data.<br>
+                    It can carry encrypted data from client to server.<br>
+                    Notes:-<br>
+                    Post requests cannot be cached.<br>
+                    Post requests do not remain in browser history.<br>
+                    Post requests cannot be bookmarked.<br>
+                    Post requests can be deal with sensitive data.<br>
+                    Post requests have no limit for data.<br>
+                    Post requests have good performance.<br>
+                    Post requests can upload images.<br>
+                    </p>    
+            </div>
+
+            <div class="list-group-item list-group-item-secondary">
+                <p class="h3">HTML Images</p>
+                <p>To insert image on HTML page < img /> tag is used.<br>
+                    It is non-paired tag.<br>
+                    
+                    Attributes		Parameters<br>
+                    Align			left, right<br>
+                    Border			px<br>
+                    Height			px / %<br>
+                    Width			px / %<br>
+                    Src			URL(Uniform resource Locator)<br>
+                    
+                    Note:- for responsive we used % in place of px. Because % automatically adjust his length and width according to device.<br>
+                    </p>    
+            </div>
+
+            <div class="list-group-item list-group-item-success">
+                <p class="h3">Anchor tag ( a tag)</p>
+                <p>It defines hyperlinks, which is used to link resources from one page to another page.<br>
+                    It is a paired tag.<br>
+                    Attributes 		Parameters<br>
+                    Href			URL<br>
+                    Target			blank(open new page)<br>
+                    Parent(stay on same page)<br>
+                    </p>    
+            </div>
+
+            <div class="list-group-item list-group-item-danger">
+                <p class="h3">HTML Tables</p>
+                <p>Tables are used to represent data in tabular form.<br>
+                    Tables are created using < table> tag.<br>
+                    Table rows are represented using < tr> tag.<br>
+                    Table cells (data) represented using < td> tag.<br>
+                    Table is divided into two section head and body.<br>
+                    Table head is represented using < thead> tag.<br>
+                    Table body is represented using < tbody> tag.<br>
+                    
+                    Attributes		Parameters<br>
+                    Border			pixels<br>
+                    Bordercolor		color<br>
+                    Bgcolor		color<br>
+                    Background		image<br>
+                    Height			px / %<br>
+                    Width			px / %<br>
+                    Align			left, right, center<br>
+                    Valign			top, bottom, middle<br>
+                    Rules			rows, cols, all, none<br>
+                    Cellspacing		px<br>
+                    Cellpadding		px<br>
+                    Rowspan		number<br>
+                    Colspan		number<br>
+                    </p>    
+            </div>
+
+            
+
+     
+
+           
+
+     
 
             <div class="list-group-item list-group-item-primary">
                 <p class="h3"></p>
@@ -392,846 +807,8 @@
                 <p></p>    
             </div>
 
-            <div class="list-group-item list-group-item-white">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white-50">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-secondary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-success">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-danger">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-warning">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-info">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-dark">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-light">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white-50">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-secondary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-success">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-danger">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-warning">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-info">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-dark">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-light">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white-50">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-secondary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-success">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-danger">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-warning">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-info">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-dark">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-light">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white-50">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-secondary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-success">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-danger">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-warning">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-info">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-dark">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-light">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white-50">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-secondary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-success">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-danger">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-warning">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-info">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-dark">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-light">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white-50">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-secondary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-success">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-danger">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-warning">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-info">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-dark">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-light">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white-50">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-secondary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-success">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-danger">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-warning">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-info">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-dark">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-light">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white-50">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-secondary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-success">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-danger">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-warning">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-info">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-dark">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-light">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white-50">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-secondary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-success">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-danger">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-warning">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-info">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-dark">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-light">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white-50">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-secondary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-success">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-danger">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-warning">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-info">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-dark">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-light">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white-50">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-secondary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-success">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-danger">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-warning">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-info">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-dark">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-light">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white-50">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-secondary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-success">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-danger">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-warning">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-info">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-dark">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-light">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white-50">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-secondary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-success">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-danger">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-warning">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-info">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-dark">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-light">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white-50">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-secondary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-success">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-danger">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-warning">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-info">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-dark">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-light">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white-50">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-secondary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-success">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-danger">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-warning">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-info">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-dark">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-light">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white-50">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-secondary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-success">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-danger">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-warning">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-info">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-dark">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-light">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-white-50">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-
-
-
-            <div class="list-group-item list-group-item-primary">
-                <p class="h3"></p>
-                <p></p>    
-            </div>
-            <div class="list-group-item">NodeJs</div>
-            <div class="list-group-item">React js</div>
-            <div class="list-group-item">Mysql</div>
-            <div class="list-group-item">MongoDB</div>
-        
+     
+            
     </div>
 
        <!-- *****  This is a Addressing section  *****  -->

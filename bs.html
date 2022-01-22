@@ -953,8 +953,43 @@
         </div>
 
         <div class="list-group-item list-group-item-warning">
-            <p class="h3"></p>
-            <p></p>    
+            <p class="h3">Badge</p>
+            <p>- badge<br>
+                - badge-pill<br>
+                - badge-*...*</p>  
+                <p>&lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                            &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"&gt;<br>
+                            &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"&gt;<br>
+                            &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"&gt;<br>&lt;/script&gt;<br>
+                            &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"&gt;<br>&lt;/script&gt;<br>
+                            &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"&gt;<br>&lt;/script&gt;<br>        
+                            &lt;style&gt;<br>
+                                .blink
+                                {
+                                    animation: blinking 1s infinite;
+                                }
+                                @keyframes blinking
+                                {
+                                    0%{color : blue; background-color: yellow;}
+                                    75%{color : yellow; background-color: red;}
+                                }
+                            &lt;/style&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                            &lt;div class="container mt-5"&gt;<br>
+                                &lt;ul class="list-group w-25"&gt;<br>
+                                    &lt;li class="list-group-item"&gt;<br>Angular &lt;span class="badge badge-info"&gt;<br>13&lt;/span&gt;<br>&lt;/li&gt;<br>
+                                    &lt;li class="list-group-item"&gt;<br>NodeJS &lt;span class="badge badge-primary badge-pill"&gt;<br>Server&lt;/span&gt;<br> &lt;/li&gt;<br>
+                                    &lt;li class="list-group-item"&gt;<br>Deno &lt;span class="badge badge-danger float-right blink"&gt;<br>New&lt;/span&gt;<br> &lt;/li&gt;<br>
+                                    &lt;li class="list-group-item"&gt;<br>ReactJS&lt;/li&gt;<br>
+                                    &lt;li class="list-group-item"&gt;<br>VeuJS&lt;/li&gt;<br>
+                                &lt;/ul&gt;<br>
+                            &lt;/div&gt;<br>
+                        &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                    </p>  
         </div>
 
         <div class="list-group-item list-group-item-info">
