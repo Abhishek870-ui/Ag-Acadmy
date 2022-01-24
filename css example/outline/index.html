@@ -1,0 +1,193 @@
+<!Doctype html>
+<html>
+    <head>
+        <style>
+            .thk
+            {
+                border-width: 15px;
+            }
+            /*div
+            {
+                width : 200px;
+                height : 100px;
+            }*/
+            .brdr1
+            {
+                border-style: ridge;
+                border-width: 10px;
+                border-color: red;
+            }
+            .brdr2
+            {
+                border-style: ridge groove;
+                border-width: 10px;
+                border-color: yellow green;
+            }
+            .brdr3
+            {
+                border : maroon 2px solid;
+            }
+            .brdr4
+            {
+                border : 15px orange solid;
+                border-left: 10px blue ridge;
+                border-bottom: 10px navy inset;
+                border-right: skyblue 10px double;
+                border-top : dashed blueviolet 10px;
+            }
+            .brdr5
+            {
+                border : solid 2px;
+                border-radius: 50px 0px;
+                border-color: red;
+            }
+            .brdr6
+            {
+                border : solid 2px;
+                border-color : orchid;
+                border-radius: 25px 25px 0px 0px;
+            }
+            .brdrmg1
+            {
+                width : 500px;
+                height: 100px;
+                border-style: solid;
+                border-width: 20px;
+                border-image-source: url("border.png");
+                border-image-slice: 30;
+                border-image-repeat: repeat;
+                border-image-width: 20px;
+                
+            }
+            .brdrmg2            
+            {
+                width : 500px;
+                height: 100px;
+                border-style: solid;
+                border-width: 20px;
+                border-image-source: url("border.png");
+                border-image-slice: 30;
+                border-image-repeat: round;
+                border-image-width: 20px;
+            }
+            .brdrmg3
+            {
+                width : 500px;
+                height: 100px;
+                border-style: solid;
+                border-width: 20px;
+                border-image-source: url("border.png");
+                border-image-slice: 30;
+                border-image-repeat: stretch;
+                border-image-width: 20px;
+            }
+            .olbr1
+            {
+                border : 10px solid black;
+            }
+
+            .olbr2
+            {
+                outline : 10px black;
+                outline-style: dotted;                
+            }
+            .combi
+            {                
+                outline : 10px solid blue;
+                border : 10px solid red;
+            }
+            .mrgn1
+            {
+                
+                margin-bottom: 50px;
+                margin-top: 50px;
+                margin-left: 50px; 
+                margin-right: 50px; 
+                margin: auto;
+                border:1px solid;
+            }
+            .pdng1
+            {
+                /*
+                padding-top: 50px;
+                padding-bottom: 50px;
+                padding-left: 50px;*/
+                padding : 100px;
+                border:1px solid;
+            }
+            a
+            {
+                text-decoration: none;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                border: 1px solid blue;
+                border-radius: 5px;                
+                padding: 5px;
+            }
+            a:link
+            {
+                color : pink;
+            }
+            a:visited
+            {
+                color : green;
+            }
+            a:hover
+            {
+                color : white;
+                text-shadow: 0px 0px 3px black;                                
+                background: linear-gradient(to right, yellow, skyblue);
+                border: 1px solid red;
+            }
+            a:active
+            {
+                color : white;
+                font-size: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="a" style="margin-left:10px; margin-top:10px">My new link</a>
+        <!--
+        <div class="pdng1">Hello</div><br><br>        
+        
+        <div style="border:solid 1px">1
+            <div class="mrgn1">2
+                <div class="mrgn1">3
+                    <div class="mrgn1">4
+                        <div class="mrgn1">5
+                            <div class="mrgn1">6
+                                <span class="mrgn1">hi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div align = "center">
+            <div  class="olbr2" style="width: 200px; height: 100px;"></div><br>
+            <div  class="olbr1" style="width: 200px; height: 100px;"></div><br>
+            <div class="combi"style="width: 200px; height: 100px;"></div><br>
+        </div>
+        <div class="brdrmg3">stretch</div><br>
+        <div class="brdrmg2">Round</div><br>
+        <div class="brdrmg1">Repeat</div><br>
+        <!--
+        <div class="brdr6"></div><br>
+        <div class="brdr5"></div><br>
+        <div class="brdr3" style="border-radius: 10px;"></div>
+        <h1 class="brdr4">Observer my borders</h1>
+        <h1 class="brdr3">Observer my borders</h1>
+        <h1 class="brdr2">Observer my borders</h1>
+        <h1 class="brdr1">Observer my borders</h1>
+        <div style="border-style: outset;" class="thk">Outset</div><br>
+        <div style="border-style: inset;" class="thk">Inset</div><br>
+        <div style="border-style: ridge;" class="thk">Ridge</div><br>
+        <div style="border-style: groove;" class="thk">Groove</div><br>
+        <div style="border-style: double;" class="thk"></div><br>
+        <div style="border-style: dotted;" class="thk"></div><br>
+        <div style="border-style: dashed;" class="thk"></div><br>
+        <div style="border-style: solid;" class="thk"></div><br>
+        -->
+    </body>
+</html>
