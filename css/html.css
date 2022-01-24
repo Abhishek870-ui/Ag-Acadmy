@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
   }
+  html{
+    scroll-behavior: smooth;
+  }
   body{
     background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   }
@@ -148,6 +151,16 @@
     color: antiquewhite;
     
   }
+/* *****  This is a html content section  ***** */
+.html-content{
+  position: relative;
+}
+#html{
+  height:auto;
+  overflow-y: scroll;
+}
+
+
 
 /* *****  This is a Addressing section  ***** */
 .address{
