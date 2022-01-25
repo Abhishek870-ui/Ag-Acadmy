@@ -155,6 +155,9 @@
 .bs{
   margin-top: 2%;
 }
+#boot{
+  position:sticky;
+}
 
 /* *****  This is a Addressing section  ***** */
 .address{

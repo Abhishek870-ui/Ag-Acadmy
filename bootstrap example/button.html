@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>        
+
+    <style>
+        .bilnk{
+            animation: blinking 1s infinite;
+
+        }
+        @keyframes blinking{
+            0%{color : blue; background-color:yellow ;}
+            75%{color : yellow; background-color:red ;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-secondary">secondary Button</button>
+        <button class="btn btn-success">success Button</button>
+        <button class="btn btn-warning">warning Button</button>
+        <button class="btn btn-danger">danger Button</button>
+        <button class="btn btn-info bilnk">Primary Button</button>
+
+        <br><br>
+        <button class="btn btn-outline-primary">Primary Button</button>
+
+
+
+    </div>
+    
+</body>
+</html>
