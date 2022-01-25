@@ -43,6 +43,33 @@
 <!-- *****  This is a Body section  *****  -->
 <body>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- *****  This is a script   section for go to top button  *****  -->
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+        
+
     <!-- *****  This is a Header section  *****  -->
 
     <div class="header">
@@ -85,30 +112,32 @@
             <nav id="js" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
             <a class="navbar-brand" href="#">Javascript INDEX</a>
        <nav class="nav nav-pills flex-column">
-               <a class="nav-link" href="#section1">About BootStrap</a>
-               <a class="nav-link" href="#section2">History</a>
-               <a class="nav-link" href="#section3">CDN</a>
-               <a class="nav-link" href="#section4">Colors</a>
-               <a class="nav-link" href="#section5">Lists</a>
-               <a class="nav-link" href="#section6">Modals</a>
-               <a class="nav-link" href="#section7">Tables</a>
-               <a class="nav-link" href="#section8">Inputs-Groups</a>
-               <a class="nav-link" href="#section9">Dropdown</a>
-               <a class="nav-link" href="#section10">Grid System</a>
-               <a class="nav-link" href="#section11">Forms</a>
-               <a class="nav-link" href="#section12">Badge</a>
-               <a class="nav-link" href="#section13"></a>
-               <a class="nav-link" href="#section14"></a>
-               <a class="nav-link" href="#section15"></a>
-               <a class="nav-link" href="#section16"></a>
-               <a class="nav-link" href="#section17"></a>  
-               <a class="nav-link" href="#section18"></a> 
-               <a class="nav-link" href="#section19"></a>  
-               <a class="nav-link" href="#section20"></a>   
-               <a class="nav-link" href="#section21"></a>  
-               <a class="nav-link" href="#section22"></a>  
-               <a class="nav-link" href="#section23"></a>
-               <a class="nav-link" href="#section24"></a>     
+               <a class="nav-link" href="#section1">About Javascript</a>
+               <a class="nav-link" href="#section2">Environmental Setup</a>
+               <a class="nav-link" href="#section3">Execution of Javascript </a>
+               <a class="nav-link" href="#section4">Variables</a>
+               <a class="nav-link" href="#section5">Strings</a>
+               <a class="nav-link" href="#section6">Numbers</a>
+               <a class="nav-link" href="#section7">Var v/s Let</a>
+               <a class="nav-link" href="#section8">Operators</a>
+               <a class="nav-link ml-3 my-1" href="#section9">Arithmetic operators</a>
+               <a class="nav-link ml-3 my-1" href="#section10">Relational Operators</a>
+               <a class="nav-link ml-3 my-1" href="#section11">Logical operators</a>
+               <a class="nav-link ml-3 my-1" href="#section12">Bitwise operators</a>
+               <a class="nav-link ml-3 my-1" href="#section13">Assignment operators</a>
+               <a class="nav-link" href="#section14">Control Statements</a>
+               <a class="nav-link ml-3 my-1" href="#section15">Decision Control</a>
+               <a class="nav-link ml-3 my-1" href="#section16">Looping Control</a>
+               <a class="nav-link ml-4 my-1" href="#section17">For loop</a>  
+               <a class="nav-link ml-4 my-1" href="#section18">while loop</a> 
+               <a class="nav-link" href="#section19">Function</a>  
+               <a class="nav-link ml-4 my-1" href="#section20">Named function</a>   
+               <a class="nav-link ml-4 my-1" href="#section21">anonymous function</a>  
+               <a class="nav-link ml-4 my-1" href="#section22">inputs and Output</a>  
+               <a class="nav-link ml-4 my-1" href="#section23">Constructor function</a>
+               <a class="nav-link ml-4 my-1" href="#section24">Prototype</a> 
+               <a class="nav-link ml-4 my-1" href="#section25">Passing Parameters</a>     
+
                
        
      </nav>
@@ -116,7 +145,7 @@
         <div class="col-8">
             <div class="js-content" data-bs-spy="scroll" data-bs-target="js" data-bs-offset="0" tabindex="0">
                 <div class="list-group">
-                    <div class="list-group-item list-group-item-primary">
+                    <div class="list-group-item list-group-item-primary" id="section1">
                         <p class="h3">Javascript</p>
                         <p>
                             <li>Javascript is a scripting language.</li>
@@ -151,7 +180,7 @@
                         </p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-secondary">
+                    <div class="list-group-item list-group-item-secondary" id="section2">
                         <p class="h3">Environmental setup</p>
                         <p>VS Code
                             Website :- https://code.visualstudio.com/#alt-downloads</p> 
@@ -160,7 +189,7 @@
                             <p>Javascript programs must have extension '.js'</p>
                     </div>
             
-                    <div class="list-group-item list-group-item-success">
+                    <div class="list-group-item list-group-item-success" id="section3">
                         <p class="h3">Execution of Javascript programs</p>
                         <p>demo.js<br>
                             <p>console.log("Hello world")</p>
@@ -192,7 +221,7 @@
                         </p>
                     </div>
             
-                    <div class="list-group-item list-group-item-danger">
+                    <div class="list-group-item list-group-item-danger" id="section4">
                         <p class="h3">Variables</p>
                         <p>Variables are used to store data.</p>  
                         <p>by using variables we can store any type of data,
@@ -201,7 +230,7 @@
                         <p>'let' and 'const' keywords introduced in ES5.</p> 
                     </div>
             
-                    <div class="list-group-item list-group-item-warning">
+                    <div class="list-group-item list-group-item-warning" id="section5">
                         <p class="h3">String</p>
                         <p>- Strings can be declared with '', "", ``</p>    
                         <p> - `` is introduced in ES6.</p>
@@ -218,7 +247,7 @@
                         </p>
                     </div>
             
-                    <div class="list-group-item list-group-item-info">
+                    <div class="list-group-item list-group-item-info" id="section6">
                         <p class="h3">Numbers</p>
                         <p>Javascript supports decimal, double, hexadecimal, octal and binary numbers.</p>  
                         <p>
@@ -247,7 +276,7 @@
                         </p>  
                     </div>
             
-                    <div class="list-group-item list-group-item-dark">
+                    <div class="list-group-item list-group-item-dark" id="section7">
                         <p class="h3">var v/s let</p>
                         <p> Example
                             <p>
@@ -302,7 +331,7 @@
                         </p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-light">
+                    <div class="list-group-item list-group-item-light" id="section8">
                         <p class="h3">Operators</p>
                         <p>
                             <li>Arithmetic operators	-> eg +, -, *, /, %, ++, --, **</li>
@@ -313,7 +342,7 @@
                             <li>Strictly equal to 		-> ===</li>
                         </p>    
                     </div>
-                    <div class="list-group-item list-group-item-primary">
+                    <div class="list-group-item list-group-item-primary" id="section9">
                         <p class="h3">Arithmetic Operators:-</p>
                         <p>
                             <li>Consider A = 25, B = 7, 	Calculate C</li>
@@ -329,7 +358,7 @@
                         </p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-secondary">
+                    <div class="list-group-item list-group-item-secondary" id="section10">
                         <p class="h3">Relational Operators:- </p>
                         <p>
                             Consider A = 5, B = 10, C = 5<br>
@@ -347,7 +376,7 @@
                         </p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-success">
+                    <div class="list-group-item list-group-item-success" id="section11">
                         <p class="h3">Logical Operators</p>
                         <p>
                             Consider A = 1, B = 0<br>
@@ -357,10 +386,10 @@
                         </p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-danger">
+                    <div class="list-group-item list-group-item-danger" id="section12">
                         <p class="h3">Bitwise Operators</p>
                         <p>Truth Table
-                            <table class="table-bordered table-hover table-dark m-2">
+                            <table class="table-bordered table-hover table-dark m-2 w-100 text-center">
                                 <thead>
                                     <tr>
                                         <th>a</th>
@@ -420,7 +449,7 @@
                                         >> rignt shift	-> bit discard</p>
                     </div>
             
-                    <div class="list-group-item list-group-item-warning">
+                    <div class="list-group-item list-group-item-warning" id="section13">
                         <p class="h3">Assignmet operators</p>
                         <p>Consider A = 5</p>    
                         <p>
@@ -435,7 +464,7 @@
                         </p>
                     </div>
             
-                    <div class="list-group-item list-group-item-info">
+                    <div class="list-group-item list-group-item-info" id="section14">
                         <p class="h3">Control Statements</p>
                         <p> changing flow of a program.
                             <p>types
@@ -446,7 +475,7 @@
                         </p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-dark">
+                    <div class="list-group-item list-group-item-dark" id="section15">
                         <p class="h3">Decision Control(if Statements)</p>
                         <p>
                             /*Simple if*/<br>
@@ -469,7 +498,7 @@
                         </p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-light">
+                    <div class="list-group-item list-group-item-light" id="section16">
                         <p class="h3">Looping Control</p>
                         <p>
                             <li>Intitalization</li>
@@ -482,12 +511,12 @@
                             <li>do while loop</li>
                         </p> 
                     </div>
-                    <div class="list-group-item list-group-item-primary">
+                    <div class="list-group-item list-group-item-primary" id="section17">
                         <p class="h3">for loop</p>
                         <p>syntax  for(Intitalization;Termination;Incrementing Factor)</p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-secondary">
+                    <div class="list-group-item list-group-item-secondary" id="section18">
                         <p class="h3">while</p>
                         <p>syntax<br>
                             Intitalization<br>
@@ -508,7 +537,7 @@
                             while(Termination)</p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-success">
+                    <div class="list-group-item list-group-item-success" id="section19">
                         <p class="h3">Functions</p>
                         <p>A particular business logic is called as function.</p>   
                         <p>Functions are used to reuse business logic.</p>
@@ -525,7 +554,7 @@
                         
                     </div>
             
-                    <div class="list-group-item list-group-item-danger">
+                    <div class="list-group-item list-group-item-danger" id="section20">
                         <p class="h3">Named functions</p>
                         <p>function with name is called as named functions</p>  
                         <p>Syntax<br>
@@ -587,7 +616,7 @@
                             </p>  
                     </div>
             
-                    <div class="list-group-item list-group-item-warning">
+                    <div class="list-group-item list-group-item-warning" id="section21">
                         <p class="h3">Anonymous functions</p>
                         <p> - the function without name is called as anonymous function.</p>    
                         <p>these are also called as arrow functions or callback functions.</p>
@@ -652,7 +681,7 @@
             
                     
             
-                    <div class="list-group-item list-group-item-dark">
+                    <div class="list-group-item list-group-item-dark" id="section22">
                         <p class="h3"> Inputs and outputs</p>
                         <p>prompt<br>
                             let var_one = document.getElementById(id).value<br>
@@ -707,7 +736,7 @@
                         </p>   
                     </div>
             
-                    <div class="list-group-item list-group-item-light">
+                    <div class="list-group-item list-group-item-light" id="section23">
                         <p class="h3">Constructor Functions:- </p>
                         <p><li>Constructor Function is used to create class like structure.</li>
                         <li>In constructor function everything (variables and functions) should
@@ -777,7 +806,7 @@
                         </p></p>
                     </div>
             
-                    <div class="list-group-item list-group-item-primary">
+                    <div class="list-group-item list-group-item-primary" id="section24">
                         <p class="h3">Prototype</p>
                         <p>Prototype is a property which adds members to constructor dynamically.</p>
                         
@@ -877,7 +906,7 @@
                         </p>
                     </div>
             
-                    <div class="list-group-item list-group-item-secondary">
+                    <div class="list-group-item list-group-item-secondary" id="section25">
                         <p class="h3">
                             Passing parameters to functions</p>
                         <p>1. Default parameters
