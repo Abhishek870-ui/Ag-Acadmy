@@ -68,7 +68,7 @@
         }
         </script>
 
-        
+
 
     <!-- *****  This is a Header section  *****  -->
 
@@ -86,8 +86,7 @@
                         <li class="hover-me"><a href="htmlcss.html"><i class="fa fa-css3"></i>CSS</a></li>
                         <li class="hover-me"><a href="bs.html"><i class="fa fa-diamond"></i>BootStrap</a></li>
                         <li class="hover-me"><a href="js.html"><i class="fa fa-diamond"></i>javascript</a></li>
-                        <li class="hover-me"><a href="ds.html"><i class="fa fa-diamond"></i>DataScience</a></li>
-                        <li class="hover-me"><a href="ethical.html"><i class="fa fa-diamond"></i>EthicalHacker</a></li>
+                        
                     </ul>
                 </div>
             </li>
@@ -136,7 +135,27 @@
                <a class="nav-link ml-4 my-1" href="#section22">inputs and Output</a>  
                <a class="nav-link ml-4 my-1" href="#section23">Constructor function</a>
                <a class="nav-link ml-4 my-1" href="#section24">Prototype</a> 
-               <a class="nav-link ml-4 my-1" href="#section25">Passing Parameters</a>     
+               <a class="nav-link ml-4 my-1" href="#section25">Passing Parameters</a> 
+               <a class="nav-link" href="#section38">JSON</a>
+               <a class="nav-link ml-4 my-1" href="#section39">seal</a>
+               <a class="nav-link ml-4 my-1" href="#section40">freeze</a>    
+               <a class="nav-link ml-4 my-1" href="#section26">Promises</a>
+               <a class="nav-link ml-4 my-1" href="#section27">Async and Await</a>
+               <a class="nav-link ml-4 my-1" href="#section28">Call Backs</a>
+               <a class="nav-link ml-4 my-1" href="#section29">Call()</a>
+               <a class="nav-link ml-4 my-1" href="#section30">Apply()</a>
+               <a class="nav-link ml-4 my-1" href="#section31">Bind()</a>
+               <a class="nav-link ml-4 my-1" href="#section32">Closure</a>
+               <a class="nav-link" href="#section33">Data structure</a>
+               <a class="nav-link ml-4 my-1" href="#section34">Map</a>
+               <a class="nav-link ml-4 my-1" href="#section35">WeakMap</a>
+               <a class="nav-link ml-4 my-1" href="#section36">set</a>
+               <a class="nav-link ml-4 my-1" href="#section37">WeakSet</a>
+               
+               <a class="nav-link" href="#section41"></a>
+               <a class="nav-link" href="#section42"></a>
+               <a class="nav-link" href="#section43"></a>
+               <a class="nav-link" href="#section44"></a>
 
                
        
@@ -909,7 +928,7 @@
                     <div class="list-group-item list-group-item-secondary" id="section25">
                         <p class="h3">
                             Passing parameters to functions</p>
-                        <p>1. Default parameters
+                        <p><b>1. Default parameters</b>
                             <p>It allows named parameters to be intialysed with default
                                 values if no value or undefined is passed.
                              <p>function fun_one(arg1 = 10, arg2 = "FullStack", arg3 = "Angular")<br>
@@ -926,7 +945,7 @@
                                 fun_one(undefined,'undefined',undefined)//10 undefined Angular
                             </p>
                         <p>
-                            2. Optional Parameters
+                            <b>2. Optional Parameters</b>
                             <p><li> While calling a function no need to pass all arguments.</li>
                             <li>We can keep few arguments as optional.</li>
                             <li>Optional parameters instroduced in ES6.
@@ -946,7 +965,7 @@
                         </p>
                         <p>
                             
-            3. Rest Parameters
+                        <b>3. Rest Parameters</b>
             <p>
                 <li> - it is improved way to handle function parameters.</li>
                 <li> It allows us to represent infinite number of arguments as an array.</li>
@@ -982,80 +1001,580 @@
                     </p>
                         </p>    
                     </div>
-            
-                    <div class="list-group-item list-group-item-success">
-                        <p class="h3"></p>
-                        <p></p>    
+
+
+                    <div class="list-group-item list-group-item-dark" id="section38">
+                        <p class="h3">JSON</p>
+                        <p><li> JSON stands for JavaScript Object Notation.</li>
+                            <li> JSON os is used to share data over Network.</li>
+                            <li> JSON is light weight as compared to XML.</li>
+                            <li> Parsing (reading) of JSON is easy as compared to XML.</li>
+                            <li> Syntax</li>
+                           </p> 
+                           <p style="margin-left: 30px;">
+                               <li style="margin-left: 30px;">Object	{}</li>
+                               <li style="margin-left: 30px;">Arrays	[]</li>
+                               <li style="margin-left: 30px;">data	key and value pairs</li>
+                               <li style="margin-left: 60px;">keys and values are separated by ':'</li>
+                               <li style="margin-left: 60px;">key value pairs are separated by ','</li>
+                           </p>  
+                           
+                        <p><b>Example for practice</b></p>  
+                        <p>//Eg01<br>
+                            var demo = {<br>
+                                'sub_one' : 'HTML',<br>
+                                "sub_two" : "CSS",<br>
+                                sub_three : 'Bootstrap',<br>
+                                key1      : 15<br>
+                            }<br>
+                            console.log(demo)<br>
+                            console.log(demo.sub_one, demo.sub_two, demo.sub_three,demo.key1)<br>
+                            //Iterate this JSON<br>
+                            for(var x in demo)<br>
+                                //console.log(x)<br>
+                                console.log(demo[x])<br>
+                            
+                            */<br>
+                            </p>
                     </div>
             
-                    <div class="list-group-item list-group-item-danger">
-                        <p class="h3"></p>
-                        <p></p>    
+                    <div class="list-group-item list-group-item-light" id="section39">
+                        <p class="h3">freeze() </p>
+                        <p>freeze()	<br>
+                            -> Read		allowed<br>
+                            -> Update	denied<br>
+                            -> Write	denied<br>
+                            -> Delete	denied<br>
+                        </p> 
+                        
+                        <p><b>Example for practice</b></p> 
+                        <p>var obj = {<br>
+                            "p_id" : 111<br>
+                        }<br>
+                        console.log(obj)<br>
+                        //add new data<br>
+                        obj.p_name = "p_one"<br>
+                        console.log(obj)<br>
+                        //modify data<br>
+                        obj.p_id = 101<br>
+                        console.log(obj)<br>
+                        /*<br>
+                        //lock object<br>
+                        Object.freeze(obj)<br><br>
+                        //try to modify data<br>
+                        obj.p_id = 100<br>
+                        console.log("Modified",obj)     //no error no update<br>
+                        //try to add new data<br>
+                        obj.p_cost = 10000<br>
+                        console.log("Modified",obj)     //no error no update<br>
+                        //try to delete data<br>
+                        delete obj.p_id<br>
+                        console.log("Modified",obj)     //no error no update<br>
+                        */<br>
+                        </p>   
+                    </div> 
+                    <div class="list-group-item list-group-item-primary" id="section40">
+                        <p class="h3">seal()</p>
+                        <p>seal()		<br>
+                            -> Read		allowed<br>
+                            -> Update	allowed<br>
+                            -> Write	denied<br>
+                            -> Delete	denied<br>
+                        </p>    
+                            
+                        <p><b>Example for practice</b></p> 
+                        <p>//lock object<br>
+                            Object.seal(obj)<br>
+                            //try to modify data<br>
+                            obj.p_id = 100<br>
+                            console.log("Modified",obj)     //update success<br>
+                            //try to add new data<br>
+                            obj.p_cost = 10000<br>
+                            console.log("Modified",obj)     //no error no update<br>
+                            //try to delete data<br>
+                            delete obj.p_id<br>
+                            console.log("Modified",obj)     //no error no update <br>    
+                            
+                            </p>
                     </div>
             
-                    <div class="list-group-item list-group-item-warning">
-                        <p class="h3"></p>
-                        <p></p>    
+            
+                    <div class="list-group-item list-group-item-success" id="section26">
+                        <p class="h3">Promises</p>
+                        <p><li> Promises are used to handle asynchronous operations in Javascript.</li>
+                            <li>Promises are special Javascript objects.</li>
+                            <li>Promises have two states
+                                <p style="padding-left: 30px;"> 
+                                 <li> Success	(resolve)</li>
+                                <li>Failure	(reject)</li>
+                            </p></li>
+                            <li> Promises can be created using 'Promise' class.</li>
+                            <li>'Promise' is the predefined class in Javascript.</li>
+                            <li>Promises can be consumed using 'then()'</li>
+                           </p>   
+                           <p><b>Example for practice</b></p> 
+                           <p>/*<br>
+                           <b> //Eg01 </b><br>
+                            //creating promise<br>
+                            let my_promise = new Promise((resolve, reject)=>{<br>
+                                resolve("Tomorrow i will be at home")<br>
+                            })<br>
+                            
+                            //consume promise<br>
+                            my_promise.then((posRes)=>{<br>
+                                console.log(posRes)<br>
+                            },(errRes)=>{<br>
+                                console.log(errRes)<br>
+                            })<br>
+                            
+                        <b>//Eg02</b><br>
+                            let my_promise = new Promise((resolve, reject)=>{<br>
+                                setTimeout(()=>{<br>
+                                    resolve("Success....!")<br>
+                                },5000)<br>
+                            })<br>
+                            
+                            my_promise.then((posRes)=>{<br>
+                                console.log(posRes)<br>
+                            },(errRes)=>{<br>
+                                console.log(errRes)<br>
+                            })<br>
+                            
+                        <b> //Eg03</b><br>
+                            let my_promise = new Promise((resolve, reject)=>{<br>
+                                reject("Failure")<br>
+                                resolve("Success")<br>
+                            })<br>
+                            
+                            my_promise.then((posRes)=>{<br>
+                                console.log(posRes)<br>
+                            },(errRes)=>{<br>
+                                console.log(errRes)<br>
+                            })<br>
+                            */<br><br>
+                        <b>//Eg04</b><br><br>
+                            let my_promise = new Promise((resolve, reject)=>{<br>
+                                setTimeout(()=>{<br>
+                                    resolve("Success")<br>
+                                },5000)<br>
+                                setTimeout(()=>{<br>
+                                    reject("Failure")<br>
+                                },6000)<br>
+                            })<br><br>
+                             
+                            my_promise.then((posRes)=>{<br><br>
+                                console.log(posRes)<br>
+                            },(errRes)=>{<br>
+                                console.log(errRes)<br>
+                            })<br>
+                            </p>
                     </div>
             
-                    <div class="list-group-item list-group-item-info">
-                        <p class="h3"></p>
-                        <p></p>    
+                    <div class="list-group-item list-group-item-danger" id="section27">
+                        <p class="h3">async and await</p>
+                        <p><li>Netscape released above keywords in ES9.</li>
+                            <li> Above keywords are used to increase code readability.</li>
+                            <li> These keywords increase application performance.</li>
+                        </p>
+                        <p><b>Example for practice</b></p> 
+                        <p><b>//Eg05</b><br>
+                            let my_promise = new Promise((resolve, reject)=>{<br>
+                                resolve("Hello")<br>
+                            })<br><br>
+                            
+                            async function my_fun()<br>
+                            {<br>
+                                let res = await my_promise<br>
+                                console.log(res)<br>
+                            }<br><br>
+                            my_fun()<br>
+                            */<br><br>
+                            <b>//Eg06</b><br>
+                            function add(num)<br>
+                            {<br>
+                                return new Promise((resolve, reject)=>{<br>
+                                    resolve(num + 5)<br>
+                                })<br>
+                            }<br><br>
+                            
+                            function sub(num)<br>
+                            {<br>
+                                return new Promise((resolve, reject)=>{<br>
+                                    resolve (num - 3)<br>
+                                })<br><br>
+                            }<br>
+                            async function my_fun()<br>
+                            {<br>
+                                let res1 = await add(5)<br><br>
+                                let res2 = await sub(res1)<br>
+                                console.log(res2)<br>
+                            }<br>
+                            my_fun()<br>
+                            </p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-dark">
-                        <p class="h3"></p>
-                        <p></p>    
+                    <div class="list-group-item list-group-item-warning" id="section28">
+                        <p class="h3">Callbacks</p>
+                        <p>Passing one function to another function as argument is called as callback.</p> 
+                        <p><b>Example for practice</b></p> 
+                        <p>/*
+                            <b>//Eg01</b><br>
+                            function fun_one(arg)<br>
+                            {<br>
+                                console.log(arg())<br>
+                            }<br>
+                            <br>
+                            fun_one(()=>{<br>
+                                return "Hello...!"<br>
+                            })<br>
+                            
+                            <b>//Eg02</b><br>
+                            function fun_one(arg1, arg2, arg3)<br>
+                            {
+                                console.log(arg1(),arg2(),arg3())<br>
+                            }<br>
+                            
+                            fun_one(()=>{<br>
+                                return 123<br>
+                            },()=>{<br>
+                                return "Good evening"<br>
+                            },()=>{<br>
+                                return "Javascript"<br>
+                            })<br>
+                            
+                            <b>//Eg03</b><br>
+                            function add(num, callback)<br>
+                            {<br>
+                                return callback((num + 5),false)<br>
+                            }<br>
+                            
+                            add(7,(addRes,error)=>{<br>
+                                if(!error)<br>
+                                {<br>
+                                    console.log(addRes)<br>
+                                }<br>
+                            })<br>
+                            
+                            <b>//Eg04</b><br>
+                            function add(num, callback)<br>
+                            {<br>
+                                return callback((num+5),false)<br>
+                            }
+                            <br>
+                            function sub(num, callback)<br>
+                            {<br>
+                                return callback((num - 3),false)<br>
+                            }<br>
+                            
+                            function mul(num, callback)<br>
+                            {<br>
+                                return callback((num * 4),false)<br>
+                            }<br>
+                            
+                            function div(num, callback)<br>
+                            {<br>
+                                return callback((num/2),false)<br>
+                            }<br>
+                            
+                            add(5,(addRes,err)=>{<br>
+                                if(!err)<br>
+                                {<br>
+                                    sub(addRes,(subRes,err)=>{<br>
+                                        if(!err)<br>
+                                        {<br>
+                                            mul(subRes,(mulRes,err)=>{<br>
+                                                if(!err)<br>
+                                                {<br>
+                                                    div(mulRes,(divRes,err)=>{<br>
+                                                        if(!err)<br>
+                                                        {<br>
+                                                            console.log(divRes)<br>
+                                                        }<br>
+                                                    })<br>
+                                                }<br>
+                                            })<br>
+                                        }<br>
+                                    })<br>
+                                }<br>
+                            })<br>
+                            //call back hell<br>
+                            
+                            */<br>
+                            <b>//Eg06</b><br>
+                            function add(num)<br>
+                            {<br>
+                                return new Promise((resolve, reject)=>{<br>
+                                    resolve(num + 5)<br>
+                                })<br>
+                            }<br>
+                            
+                            function sub(num)<br>
+                            {<br>
+                                return new Promise((resolve,reject)=>{<br>
+                                    resolve(num - 3)<br>
+                                })<br>
+                            }<br>
+                            
+                            function mul(num)<br>
+                            {<br>
+                                return new Promise((resolve, reject)=>{<br>
+                                    resolve(num * 4)<br>
+                                })<br>
+                            }<br>
+                            
+                            function div(num)<br>
+                            {<br>
+                                return new Promise((resolve, reject)=>{<br>
+                                    resolve(num / 2)<br>
+                                })<br>
+                            }<br>
+                            async function myFun()<br>
+                            {<br>
+                                let addRes = await add(5)<br>
+                                let subRes = await sub(addRes)<br>
+                                let mulRes = await mul(subRes)<br>
+                                let divRes = await div(mulRes)<br>
+                                console.log(divRes)<br>
+                            }<br>
+                            
+                            myFun()<br>
+                            </p>   
                     </div>
             
-                    <div class="list-group-item list-group-item-light">
-                        <p class="h3"></p>
-                        <p></p>    
-                    </div>
-                    <div class="list-group-item list-group-item-primary">
-                        <p class="h3"></p>
-                        <p></p>    
+                    <div class="list-group-item list-group-item-info" id="section29">
+                        <p class="h3">call() </p>
+                        <p>This function is used to create relationship between two unknown 
+                            memory locations.
+                         </p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-secondary">
-                        <p class="h3"></p>
-                        <p></p>    
+                    <div class="list-group-item list-group-item-dark" id="section30">
+                        <p class="h3">apply() </p>
+                        <p><li> It is same as call function</li>
+                            <li> When we have to pass arguments as array this function is used<br>
+                              (array imples no independent arguments) </li>
+                           </p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-success">
-                        <p class="h3"></p>
-                        <p></p>    
+                    <div class="list-group-item list-group-item-light" id="section31">
+                        <p class="h3">bind()</p>
+                        <p> <li> this function is used to merge two unknown memory locations.</li>
+                            <li> this function returns new function.</li>
+                        </p> 
+                        <p><b>Example for practice</b></p> 
+                        <p>let obj = {<br>
+                            num : 10<br>
+                        }<br>
+                        console.log(obj)<br>
+                        function my_fun(arg1)<br>
+                        {<br>
+                            return this.num + arg1<br>
+                        }<br>
+                        console.log(my_fun.call(obj,10))<br>
+                        function new_fun(arg1, arg2, arg3)<br>
+                        {<br>
+                            return this.num + arg1 + arg2 + arg3<br>
+                        }<br>
+                        console.log(new_fun.call(obj, 20,30,40))<br>
+                        let arr = [10,20,30]<br>
+                        console.log(new_fun.apply(obj,arr))<br>
+                        let bindfun = new_fun.bind(obj)<br>
+                        console.log(bindfun(20,30,40))<br>
+                        </p>
+
+                    </div>
+                    <div class="list-group-item list-group-item-primary" id="section32">
+                        <p class="h3">Closure</p>
+                        <p><li> Inner function can have access of data from outer function.</li>
+                            <li> Outer function returns inner function.</li>
+                            <li> Closure means inner function can have access of data from outer
+                              function even after returning inner function.</li>
+                        </p>    
+                        <p><b>Example for practice</b></p> 
+                        <p>function addn(x)<br>
+                            {<br>
+                                return function(y)<br>
+                                {<br>
+                                    return x + y<br>
+                                }<br>
+                            }<br>
+                            //here outer function returned inner function<br>
+                            let var_a = addn(5)<br>
+                            let var_b = addn(10)<br>
+                            //here we called returned inner function with access of variable<br>
+                            //from outer function<br>
+                            console.log(var_a(2))<br>
+                            console.log(var_b(4))<br>
+                            </p>
                     </div>
             
-                    <div class="list-group-item list-group-item-danger">
-                        <p class="h3"></p>
-                        <p></p>    
+                    <div class="list-group-item list-group-item-secondary" id="section33">
+                        <p class="h3">Datastructures in JS</p>
+                        <p>
+                            <li>Map</li>
+                            <li>WeakMap</li>
+                            <li>Set</li>
+                            <li>WaekSet</li>
+                        </p>  
+                        <p><b>Problem with JSON</b></p>   
+                        <p><li> if we are having key as object for more than one key value
+                            pairs, latest value overrides previous value.</li>
+                          <li> to overcome this issue Map() and WeakMap() used.</li>
+                         </p>
+                         <p><b>Example for practice</b></p> 
+                         <p>var obj = {}<br>
+                            var key1 = {k1 : "v1"}<br>
+                            var value1 = "Hello_1"<br>
+                            obj[key1] = value1<br>
+                            //console.log(obj)<br>
+                            
+                            var key2 = {k2 : "v2"}<br>
+                            var value2 = "Hello2"<br>
+                            obj[key2] = value2<br>
+                            console.log(obj)<br>
+                             
+                           <b> Note:- to check internal structure 'dir()' function is used.</b>
+                            </p>
                     </div>
             
-                    <div class="list-group-item list-group-item-warning">
-                        <p class="h3"></p>
-                        <p></p>    
+                    <div class="list-group-item list-group-item-success" id="section34">
+                        <p class="h3">Map()</p>
+                        <p><li>size()</li>
+                            <li> Map()</li>
+                            <li> get()</li>
+                            <li> set()</li>
+                            <li> has()</li>
+                            <li> delete()</li>
+                            <li> clear()</li>
+                            <li> keys()</li>
+                            <li> values()</li>
+                        </p> 
+                        <p><b>Example for practice</b></p> 
+                        <p>let map = new Map()<br>
+                            console.dir(map)<br>
+                            
+                            let map = new Map()<br>
+                            //console.dir(map)<br>
+                            /*<br>
+                            <b>//Eg01</b><br>
+                            let key1 = {}<br>
+                            let key2 = {}<br>
+                            let value1 = "Hello_1"<br>
+                            let value2 = "Hello_2"<br>
+                            map.set(key1, value1)<br>
+                            map.set(key2, value2) <br>
+                            console.log(map)<br>
+                            
+                            <b>//Eg02</b><br>
+                            map.set("key1","Hello_1")<br>
+                               .set("key2","Hello_2")<br>
+                               .set("key3","Hello_3")<br>
+                               .set("key4","Hello_4")<br><br>
+                               .set("key5","Hello_5")<br>
+                            
+                            console.log(map)<br>
+                            console.log(map.size)               //5<br>
+                            console.log(map.get("key5"))        //Hello_5<br>
+                            console.log(map.has("key_5"))       //false<br>
+                            map.delete("key5")<br>
+                            console.log(map)<br><br>
+                            
+                            for(let[k,v] of map)<br>
+                            {<br>
+                                console.log(k, v)<br>
+                            }<br>
+                            console.log(map.keys())<br>
+                            console.log(map.values())<br>
+                            map.clear()<br>
+                            console.log(map)<br>
+                            
+                            */<br>
+                            <b>//Eg03</b><br><br>
+                            map.set("key1","Hello_1").set("key2","Hello_1")<br>
+                            console.log(map)    //duplicate values allowed and accepted<br>
+                            map.set("key3","Hello_3").set("key3","Hello_4")<br>
+                            console.log(map)    //duplicate keys allowed older values replaced with new one<br>
+                            </p>   
                     </div>
             
-                    <div class="list-group-item list-group-item-info">
-                        <p class="h3"></p>
-                        <p></p>    
+                    <div class="list-group-item list-group-item-danger" id="section35">
+                        <p class="h3">WeakMap</p>
+                        <p><li> it wont allow primitives as keys</li>
+                            <li> WeakMap()</li>
+                            <li> delete()</li>
+                            <li> get()</li>
+                            <li> set()</li>
+                            <li> has()</li>
+                           </p> 
+                           <p><b>Example for practice</b></p> 
+                           <p>let wm = new WeakMap()<br>
+                            //console.dir(wm)<br>
+                            let key1 = {}<br>
+                            let value1 = "Hello_1"<br>
+                            wm.set(key1,value1).set({},"Hello_2")<br>
+                            console.log(wm)<br>
+                            wm.set("key3","Hello_3")    //Type Error<br>
+                            </p>   
                     </div>
             
-                    <div class="list-group-item list-group-item-dark">
-                        <p class="h3"></p>
-                        <p></p>    
+                    <div class="list-group-item list-group-item-warning" id="section36">
+                        <p class="h3">Set</p>
+                        <p> <li> Set()</li>
+                            <li> has()</li>
+                            <li> add()</li>
+                            <li> delete()</li>
+                            <li> clear()</li>
+                            <li> values()</li>
+                           </p> 
+                           <p><b>Example for practice</b></p> 
+                           <p>//Eg01<br>
+                            let set = new Set()<br>
+                            set.add(10)<br>
+                               .add(20)<br>
+                               .add(10)<br>
+                               .add(30)<br>
+                            console.log(set)    //?<br>
+                            //Eg02<br>
+                            let arr = [10,20,10,30,20,10,40]<br>
+                            let set1 = new Set(arr)<br>
+                            console.log(set1)*/<br>
+                            //Eg03<br>
+                            let set = new Set()<br>
+                            set.add(10)<br>
+                               .add(20)<br>
+                               .add(30)<br>
+                               .add(40)<br>
+                               .add(50)<br>
+                            console.log(set)            //{10, 20, 30, 40, 50}<br>
+                            set.delete(50)<br>
+                            console.log(set)            //{10, 20, 30, 40}<br>
+                            console.log(set.has(40))    //true<br>
+                            console.log(set.values())   //{10, 20, 30, 40}<br>
+                            console.log(set.keys())     //{10, 20, 30, 40}<br>
+                            for (let x of set)<br>
+                                console.log(x)<br>
+                            set.clear()<br>
+                            console.log(set)            //{}<br>
+                            </p>   
                     </div>
             
-                    <div class="list-group-item list-group-item-light">
-                        <p class="h3"></p>
-                        <p></p>    
-                    </div>
-                    <div class="list-group-item list-group-item-primary">
-                        <p class="h3"></p>
-                        <p></p>    
+                    <div class="list-group-item list-group-item-info" id="section37">
+                        <p class="h3">WeakSet</p>
+                        <p> It wont allow primitives</p>   
+                        <p><b>Example for practice</b></p> 
+                        <p>let ws = new WeakSet()<br>
+                            //ws.add(10)      //type error<br>
+                            let key1 = {data : 10}<br>
+                            let key2 = {data : 20}<br>
+                            ws.add(key1).add(key2)<br>
+                            console.log(ws)<br>
+                            ws.delete(key1)<br>
+                            console.log(ws.has(key1))   //false<br>
+                            console.log(ws)<br>
+                        </p> 
                     </div>
             
+                   
                     <div class="list-group-item list-group-item-secondary">
                         <p class="h3"></p>
                         <p></p>    
