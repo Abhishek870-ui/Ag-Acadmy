@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let arr = [10,20,30,40,50,60,70,80,90,100]
+
+        //copy all element 1 index right
+
+        console.log(arr.copyWithin(1))   //[10,10,20,30,40,50,60,70,80,90]
+
+
+        let arr2 = [10,100,20,200,30,300,40,400,50,500]
+        console.log(arr2.copyWithin(5))
+
+
+
+        let arr3 = [10,20,30,40,50,60,70,80,90,100]
+        //copy all element from index 5 at index 2
+        console.log(arr3.copyWithin(2,5))  //[10,20,60,70,80,90,100,80,90,100]
+
+
+        let arr4 = [10,20,30,40,50,60,70,80,90,100]
+        //copy element from index no 4 to 6(excluding 6) at index 2
+        console.log(arr4.copyWithin(2,4,6))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

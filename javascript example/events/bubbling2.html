@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div id = "parent">
+        <h1>Parent</h1>
+        <br><br>
+        <div id="child">
+            <h1>Child</h1>
+            <br><br>
+            <div id="subchild">
+                <h1>SubChild</h1>
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //Event bubbling
+        $("#parent").click(()=>{
+            console.log("Parent")
+        })
+
+        $("#child").click(()=>{
+            event.stopPropagation()
+            console.log("child")
+        })
+
+        $("#subchild").click(()=>{
+            console.log("subchild")
+        })
+    </script>
+    
+</body>
+</html>

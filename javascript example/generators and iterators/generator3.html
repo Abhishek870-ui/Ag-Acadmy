@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //eg03
+        
+        function *fun_one(){
+            yield 10
+            yield 20
+            return "Hello"
+            yield 30
+        }
+
+        let cur = fun_one()
+        console.log(cur.next())
+        console.log(cur.next())
+        console.log(cur.next())
+        console.log(cur.next())
+        console.log(cur.next())
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+
+
+        let arr = [10,100,20,200,30,300,40,400,50,500]
+
+        let index = arr.findIndex((element,index)=>{
+            return element == 30
+
+        })
+
+        console.log(arr)
+        console.log(index)
+        arr.splice(index,1)
+        console.log(arr)
+
+
+
+
+        arr.splice(arr.findIndex((element,index)=>{
+            return element == 30
+
+        }),1)
+        console.log(arr)
+
+
+
+
+        let arr2 = [{p_id:111},
+        {p_id:1111},
+        {p_id:222},
+        {p_id:333}]
+
+        arr2.splice(
+            arr2.findIndex((element,index)=>{
+                return element.p_id == 1111
+            }),1
+        )
+        console.log(arr)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

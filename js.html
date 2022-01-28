@@ -107,7 +107,7 @@
     <!-- *****  This is a Javascript content section  *****  -->
 <div class="container mt-5">
     <div class="row">
-        <div class="col-4">
+        <div class="col-4" style="overflow: scroll; height: 800px;">
             <nav id="js" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
             <a class="navbar-brand" href="#">Javascript INDEX</a>
        <nav class="nav nav-pills flex-column">
@@ -151,11 +151,41 @@
                <a class="nav-link ml-4 my-1" href="#section35">WeakMap</a>
                <a class="nav-link ml-4 my-1" href="#section36">set</a>
                <a class="nav-link ml-4 my-1" href="#section37">WeakSet</a>
+               <a class="nav-link" href="#section44">IIFE</a>
+               <a class="nav-link" href="#section45">Event Bubbling</a>
+               <a class="nav-link" href="#section46">Event Capturing</a>
+               <a class="nav-link" href="#section41">Generator</a>
+               <a class="nav-link" href="#section42">Iterateors</a>
+               <a class="nav-link" href="#section43">Array Manipulators</a>
                
-               <a class="nav-link" href="#section41"></a>
-               <a class="nav-link" href="#section42"></a>
-               <a class="nav-link" href="#section43"></a>
-               <a class="nav-link" href="#section44"></a>
+               <a class="nav-link" href="#section47"></a>
+               <a class="nav-link" href="#section48"></a>
+               <a class="nav-link" href="#section49"></a>
+               <a class="nav-link" href="#section50"></a>
+               <a class="nav-link" href="#section51"></a>
+               <a class="nav-link" href="#section52"></a>
+               <a class="nav-link" href="#section53"></a>
+               <a class="nav-link" href="#section54"></a>
+               <a class="nav-link" href="#section55"></a>
+               <a class="nav-link" href="#section56"></a>
+               <a class="nav-link" href="#section57"></a>
+               <a class="nav-link" href="#section58"></a>
+               <a class="nav-link" href="#section59"></a>
+               <a class="nav-link" href="#section60"></a>
+               <a class="nav-link" href="#section61"></a>
+               <a class="nav-link" href="#section62"></a>
+               <a class="nav-link" href="#section63"></a>
+               <a class="nav-link" href="#section64"></a>
+               <a class="nav-link" href="#section65"></a>
+               <a class="nav-link" href="#section66"></a>
+               <a class="nav-link" href="#section67"></a>
+               <a class="nav-link" href="#section68"></a>
+               <a class="nav-link" href="#section69"></a>
+               <a class="nav-link" href="#section70"></a>
+               
+               
+
+
 
                
        
@@ -1575,76 +1605,961 @@
                     </div>
             
                    
-                    <div class="list-group-item list-group-item-secondary">
+                    <div id="section38" class="list-group-item list-group-item-secondary">
+                        <p class="h3">IIFE</p>
+                        <p> 
+                            <li> Immediately Invoked Function Expression</li>
+                            <li> Introduced in ES9</li>
+                            <li> These are self invokable functions, i.e. no need
+                              to call IIFs.</li>
+                            <li> Syntax:-
+                                   (()=>{})()</li>
+                           </p>
+                           <p><b>Example for practice</b></p>  
+                           <p>/*<br>
+                            //Eg01<br>
+                            (()=>{<br>
+                                console.log("Welcome to IIFE")<br>
+                            })()<br>
+                            
+                            //Eg02<br>
+                            ((arg1, arg2)=>{<br>
+                                console.log(arg1+arg2)<br>
+                            })(20,30)<br>
+                            <br>
+                            //Eg03<br>
+                            let res = (()=>{<br>
+                                return "Hello...!"<br>
+                            })()<br>
+                            console.log(res)<br>
+                            
+                            //Eg04<br>
+                            for (var i = 0; i<5; i++)<br>
+                            {<br>
+                                setTimeout(()=>{<br>
+                                    console.log(i)<br>
+                                },5000)<br>
+                            }<br>
+                            */<br>
+                            for(var i = 0; i< 5; i++)<br>
+                            {<br>
+                                ((j)=>{<br>
+                                    setTimeout(()=>{<br>
+                                        console.log(j)<br>
+                                    },5000)<br>
+                                })(i)<br>
+                            }<br>
+                            </p>  
+                    </div>
+            
+                    <div id="section39" class="list-group-item list-group-item-success">
+                        <p class="h3">Event Bubbling</p>
+                        <p>It is the event starts from deepest element or target 
+                            element to its parents, all its ancestors are on the way 
+                            from bottom to top.
+                         </p>    
+                        <p> <a href="javascript example/events/bubbling.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+                        <p> <a href="javascript example/events/bubbling2.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+
+                    </div>
+            
+                    <div id="section40" class="list-group-item list-group-item-danger">
+                        <p class="h3">Event Capturing</p>
+                        <p> <li> It is the event starts from top element to target element.</li>
+                            <li> It is opposite of event bubbling.</li>
+                           </p>  
+                        <p> <a href="javascript example/events/capturing.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+
+                    </div>
+            
+                    <div id="section41" class="list-group-item list-group-item-warning">
+                        <p class="h3">Generators </p>
+                        <p> <li> Generator produces values dynamically.</li>
+                            <li> Generators utilize memory effectively.</li>
+                            <li> Generators are represented by "*"</li>
+                            <li> Generators are functions.</li>
+                            <li> Generator return a cursor.</li>
+                            <li> Default cursor points above first record.</li>
+                           </p>   
+                        <p> <a href="javascript example/generators and iterators/generators.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+                        <p> <a href="javascript example/generators and iterators/generator2.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+                        <p> <a href="javascript example/generators and iterators/generator3.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+
+                    </div>
+            
+                    <div id="section42" class="list-group-item list-group-item-info">
+                        <p class="h3">Iterators</p>
+                        <p> <li> Iterators include for loops</li>
+                            <li> for()</li>
+                            <li> forEach()</li>
+                            <li> for...of</li>
+                            <li> for...in</li>
+                        </p>   
+                        <p> <a href="javascript example/generators and iterators/iterator.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+
+                    </div>
+            
+                    <div id="section43" class="list-group-item list-group-item-dark">
+                        <p class="h3">Array Manipulators</p>
+                        <div class="container mt-5">
+                            <div class="jumbotron">
+                                <p class="h1">1. map() </p>
+                                <p class="text-justify lead">
+                                    <li>This function is used to manipulate each and every
+                                    element in array</li>
+                                <li> it returns an array</li>
+                                </p>
+                                <hr>
+                                 <p> <a href="javascript example/array manipulators/map.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+
+                                 <hr>
+                                 <hr>
+                                 <hr>
+
+                                 <p class="h1">2. filter():- </p>
+                                <p class="text-justify lead">
+                                    this function creates array based on condition
+                                </p>
+                                <hr>
+                                 <p> <a href="javascript example/array manipulators/filter.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+
+                                 <hr>
+                                 <hr>
+                                 <hr>
+
+
+                                 <p class="h1">3. reduce()         </p>
+                                <p class="text-justify lead">
+                                    left to right   0 -> 1
+                                </p>
+                                <hr>
+                                 <p> <a href="javascript example/array manipulators/reduce.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+
+                                 <hr>
+                                 <hr>
+                                 <hr>
+
+
+                                 <p class="h1">4. reduceRight()    </p>
+                                <p class="text-justify lead">
+                                    right to left   0 <- 1
+                                </p>
+                                <hr>
+                                 <p> <a href="javascript example/array manipulators/reduce.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+
+                                 <hr>
+                                 <hr>
+                                 <hr>
+
+
+                                 <p class="h1">8. push()  </p>
+                                <p class="text-justify lead">
+                                    add element at end
+                                </p>
+                                <hr>
+                                 <p> <a href="javascript example/array manipulators/push-pop-unshift-shift.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+
+                                 <hr>
+                                 <hr>
+                                 <hr>
+
+
+                                 <p class="h1">9. unshift()  </p>
+                                <p class="text-justify lead">
+                                    add element at begining
+                                </p>
+                                <hr>
+                                 <p> <a href="javascript example/array manipulators/push-pop-unshift-shift.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+
+                                 <hr>
+                                 <hr>
+                                 <hr>
+
+
+                                 <p class="h1">10. pop()    </p>
+                                <p class="text-justify lead">
+                                    remove element from end
+                                </p>
+                                <hr>
+                                 <p> <a href="javascript example/array manipulators/push-pop-unshift-shift.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+
+                                 <hr>
+                                 <hr>
+                                 <hr>
+
+
+                                 <p class="h1">11. shift()  </p>
+                                <p class="text-justify lead">
+                                    remove element from begining
+                                </p>
+                                <hr>
+                                 <p> <a href="javascript example/array manipulators/push-pop-unshift-shift.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+
+                                 <hr>
+                                 <hr>
+                                 <hr>
+
+
+                                 <p class="h1">12. some() </p>
+                                <p class="text-justify lead">
+                                    if any one element in array satisfies the condition then it will return true, otherwise false.
+                                </p>
+                                <hr>
+                                 <p> <a href="javascript example/array manipulators/some.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+
+                                 <hr>
+                                 <hr>
+                                 <hr>
+
+
+                                 <p class="h1">13. every():-  </p>
+                                <p class="text-justify lead">
+                                    if all elements satisfy the condition then it will return true, otherwise false.
+                                </p>
+                                <hr>
+                                 
+
+                                 <hr>
+                                 <hr>
+                                 <hr>
+
+
+                                 <p class="h1">14. find():-  </p>
+                                <p class="text-justify lead">
+                                  <li>  this function is used to find element in array. </li>
+                                <li>  if element found it will return same element </li>
+                                <li> if element not found it will return undefined.</li>
+
+                                </p>
+                                <hr>
+                                <p>let arr = [10,20,30,40,50]<br>
+                                    console.log(arr.find((element, index)=>{<br>
+                                        return element =='30'<br>
+                                    })) //30<br>
+                                    console.log(arr.find((element, index)=>{<br>
+                                        return element ==='30'<br>
+                                    })) //undefined<br>
+                                    </p>
+
+                                 <hr>
+                                 <hr>
+                                 <hr>
+
+                                 <p class="h1">15. includes():-  </p>
+                                <p class="text-justify lead">
+                                    it is boolean funciton used to check element is present in array or not.
+                                </p>
+                                <hr>
+                                <p>let arr = [10,20,30,40,50]<br>
+                                    
+                                    
+                                    console.log(arr.includes(30))   //true<br>
+                                    console.log(arr.includes(3))    //false<br>
+                                    </p>
+
+                                 <hr>
+                                 <hr>
+                                 <hr>
+
+
+
+                                 <p class="h1">16. splice()     </p>
+                                 <p class="text-justify lead">
+                                    swiss army knife for arrays
+                                 </p>
+                                 <hr>
+                                  <p> <a href="javascript example/array manipulators/swiss.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+
+ 
+                                  <hr>
+                                  <hr>
+                                  <hr>
+
+
+
+                                  <p class="h1">17. findIndex():- </p>
+                                  <p class="text-justify lead">
+                                    it is used to find index of particular element
+                                  </p>
+                                  <hr>
+                                   <p> <a href="javascript example/array manipulators/findindex.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+  
+                                   <hr>
+                                   <hr>
+                                   <hr>
+
+
+                                   <p class="h1">18. slice() </p>
+                                   <p class="text-justify lead">
+                                    //in slice first include second exclude <br>
+                                    //-ve indices supported
+                                    
+                                      
+                                   </p>
+                                   <hr>
+                                    <p> <a href="javascript example/array manipulators/slice.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+   
+                                    <hr>
+                                    <hr>
+                                    <hr>
+
+
+                                    <p class="h1">19. copyWithin() </p>
+                                    <p class="text-justify lead">
+                                       
+                                    </p>
+                                    <hr>
+                                     <p> <a href="javascript example/array manipulators/copywithin.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+    
+                                     <hr>
+                                     <hr>
+                                     <hr>
+
+
+                                     <p class="h1">20. indexOf():-  </p>
+                                     <p class="text-justify lead">
+                                        dont create index for duplicate elements
+                                        
+                                     </p>
+                                     <hr>
+                                      <p> <a href="javascript example/array manipulators/indexof.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+     
+                                      <hr>
+                                      <hr>
+                                      <hr>
+
+
+                                      <p class="h1">21. sort()</p>
+                                      <p class="text-justify lead">
+                                         
+                                      </p>
+                                      <hr>
+                                       <p> <a href="javascript example/array manipulators/sort.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+      
+                                       <hr>
+                                       <hr>
+                                       <hr>
+
+
+                                       <p class="h1">22. length() </p>
+                                       <p class="text-justify lead">
+                                          
+                                       </p>
+                                       <hr>
+                                        <p> <a href="javascript example/array manipulators/length.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+       
+                                        <hr>
+                                        <hr>
+                                        <hr>
+
+
+
+                                        <p class="h1">23. delete() </p>
+                                        <p class="text-justify lead">
+                                            element  deleted but memory not released
+                                           
+                                        </p>
+                                        <hr>
+                                         <p> <a href="javascript example/array manipulators/delete.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+        
+                                         <hr>
+                                         <hr>
+                                         <hr>
+
+
+
+                                         <p class="h1">24. from()  </p>
+                                         <p class="text-justify lead">
+                                            string to array
+                                            
+                                         </p>
+                                         <hr>
+                                          <p> <a href="javascript example/array manipulators/from-join.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+         
+                                          <hr>
+                                          <hr>
+                                          <hr>
+
+
+
+                                          <p class="h1">25. join()  </p>
+                                          <p class="text-justify lead">
+                                            array to string
+                                             
+                                          </p>
+                                          <hr>
+                                           <p> <a href="javascript example/array manipulators/from-join.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+          
+                                           <hr>
+                                           <hr>
+                                           <hr>
+
+
+                                           <p class="h1">26. fill():- </p>
+                                           <p class="text-justify lead">
+                                            element replacement
+                                              
+                                           </p>
+                                           <hr>
+                                            <p> <a href="javascript example/array manipulators/fill.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+           
+                                            <hr>
+                                            <hr>
+                                            <hr>
+
+                                            <p class="h1">27. flat():- </p>
+                                           <p class="text-justify lead">
+                                              
+                                           </p>
+                                           <hr>
+                                            <p> <a href="javascript example/array manipulators/flat.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+           
+                                            <hr>
+                                            <hr>
+                                            <hr>
+
+                                            <p class="h1">28. reduce():-  </p>
+                                           <p class="text-justify lead">
+                                              
+                                           </p>
+                                           <hr>
+                                            <p> <a href="javascript example/array manipulators/reduce.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+           
+                                            <hr>
+                                            <hr>
+                                            <hr>
+
+
+                                            <p class="h1">29. flatMap():-  </p>
+                                           <p class="text-justify lead">
+                                              
+                                           </p>
+                                           <hr>
+                                            <p> <a href="javascript example/array manipulators/flatmap.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+           
+                                            <hr>
+                                            <hr>
+                                            <hr>
+
+
+                                            <p class="h1">30. entries()  </p>
+                                           <p class="text-justify lead">
+                                            object to array 
+                                              
+                                           </p>
+                                           <hr>
+           
+                                            <hr>
+                                            <hr>
+                                            <hr>
+
+
+                                            <p class="h1">31. fromEntries </p>
+                                           <p class="text-justify lead">
+                                            array to object
+                                              
+                                           </p>
+                                           <hr>
+           
+                                            <hr>
+                                            <hr>
+                                            <hr>
+
+<!--
+                                            <p class="h1">12. some() </p>
+                                           <p class="text-justify lead">
+                                              
+                                           </p>
+                                           <hr>
+                                            <p> <a href="javascript example/array manipulators/some.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+           
+                                            <hr>
+                                            <hr>
+                                            <hr>
+
+
+                                            <p class="h1">12. some() </p>
+                                           <p class="text-justify lead">
+                                              
+                                           </p>
+                                           <hr>
+                                            <p> <a href="javascript example/array manipulators/some.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+           
+                                            <hr>
+                                            <hr>
+                                            <hr>
+
+
+                                            <p class="h1">12. some() </p>
+                                           <p class="text-justify lead">
+                                              
+                                           </p>
+                                           <hr>
+                                            <p> <a href="javascript example/array manipulators/some.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+           
+                                            <hr>
+                                            <hr>
+                                            <hr>
+
+
+                                            <p class="h1">12. some() </p>
+                                           <p class="text-justify lead">
+                                              
+                                           </p>
+                                           <hr>
+                                            <p> <a href="javascript example/array manipulators/some.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+           
+                                            <hr>
+                                            <hr>
+                                            <hr>
+
+
+                                            <p class="h1">12. some() </p>
+                                           <p class="text-justify lead">
+                                              
+                                           </p>
+                                           <hr>
+                                            <p> <a href="javascript example/array manipulators/some.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+           
+                                            <hr>
+                                            <hr>
+                                            <hr>
+
+
+                                            <p class="h1">12. some() </p>
+                                           <p class="text-justify lead">
+                                              
+                                           </p>
+                                           <hr>
+                                            <p> <a href="javascript example/array manipulators/some.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+           
+                                            <hr>
+                                            <hr>
+                                            <hr>
+
+
+                                            <p class="h1">12. some() </p>
+                                           <p class="text-justify lead">
+                                              
+                                           </p>
+                                           <hr>
+                                            <p> <a href="javascript example/array manipulators/some.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+           
+                                            <hr>
+                                            <hr>
+                                            <hr>
+
+                                            <p class="h1">12. some() </p>
+                                           <p class="text-justify lead">
+                                              
+                                           </p>
+                                           <hr>
+                                            <p> <a href="javascript example/array manipulators/some.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+           
+                                            <hr>
+                                            <hr>
+                                            <hr>
+
+
+                                            <p class="h1">12. some() </p>
+                                           <p class="text-justify lead">
+                                              
+                                           </p>
+                                           <hr>
+                                            <p> <a href="javascript example/array manipulators/some.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+           
+                                            <hr>
+                                            <hr>
+                                            <hr>
+
+
+                                            <p class="h1">12. some() </p>
+                                           <p class="text-justify lead">
+                                              
+                                           </p>
+                                           <hr>
+                                            <p> <a href="javascript example/array manipulators/some.html" target="blank" class="btn btn-primary">Click Here for Example demonstration</a></p>
+           
+                                            <hr>
+                                            <hr>
+                                            <hr>
+                                -->
+                            </div>
+                        </div>    
+                    </div>
+            
+                    <div id="section44" class="list-group-item list-group-item-light">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+                    <div id="section" class="list-group-item list-group-item-primary">
                         <p class="h3"></p>
                         <p></p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-success">
+                    <div id="section" class="list-group-item list-group-item-secondary">
                         <p class="h3"></p>
                         <p></p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-danger">
+                    <div id="section" class="list-group-item list-group-item-success">
                         <p class="h3"></p>
                         <p></p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-warning">
+                    <div id="section" class="list-group-item list-group-item-danger">
                         <p class="h3"></p>
                         <p></p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-info">
+                    <div id="section" class="list-group-item list-group-item-warning">
                         <p class="h3"></p>
                         <p></p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-dark">
+                    <div id="section" class="list-group-item list-group-item-info">
                         <p class="h3"></p>
                         <p></p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-light">
-                        <p class="h3"></p>
-                        <p></p>    
-                    </div>
-                    <div class="list-group-item list-group-item-primary">
+                    <div id="section" class="list-group-item list-group-item-dark">
                         <p class="h3"></p>
                         <p></p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-secondary">
+                    <div id="section" class="list-group-item list-group-item-light">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+
+
+
+                    <div id="section" class="list-group-item list-group-item-primary">
                         <p class="h3"></p>
                         <p></p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-success">
+                    <div id="section" class="list-group-item list-group-item-secondary">
                         <p class="h3"></p>
                         <p></p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-danger">
+                    <div id="section" class="list-group-item list-group-item-success">
                         <p class="h3"></p>
                         <p></p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-warning">
+                    <div id="section" class="list-group-item list-group-item-danger">
                         <p class="h3"></p>
                         <p></p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-info">
+                    <div id="section" class="list-group-item list-group-item-warning">
                         <p class="h3"></p>
                         <p></p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-dark">
+                    <div id="section" class="list-group-item list-group-item-info">
                         <p class="h3"></p>
                         <p></p>    
                     </div>
             
-                    <div class="list-group-item list-group-item-light">
+                    <div id="section" class="list-group-item list-group-item-dark">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-light">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+
+
+                    <div id="section" class="list-group-item list-group-item-primary">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-secondary">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-success">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-danger">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-warning">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-info">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-dark">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-light">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+
+
+                    <div id="section" class="list-group-item list-group-item-primary">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-secondary">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-success">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-danger">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-warning">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-info">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-dark">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-light">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+
+
+
+                    <div id="section" class="list-group-item list-group-item-primary">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-secondary">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-success">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-danger">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-warning">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-info">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-dark">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-light">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+
+
+
+                    <div id="section" class="list-group-item list-group-item-primary">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-secondary">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-success">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-danger">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-warning">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-info">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-dark">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-light">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+
+
+
+                    <div id="section" class="list-group-item list-group-item-primary">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-secondary">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-success">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-danger">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-warning">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-info">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-dark">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-light">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+
+
+                    <div id="section" class="list-group-item list-group-item-primary">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-secondary">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-success">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-danger">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-warning">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-info">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-dark">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-light">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+
+
+                    <div id="section" class="list-group-item list-group-item-primary">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-secondary">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-success">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-danger">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-warning">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-info">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-dark">
+                        <p class="h3"></p>
+                        <p></p>    
+                    </div>
+            
+                    <div id="section" class="list-group-item list-group-item-light">
                         <p class="h3"></p>
                         <p></p>    
                     </div>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>       
+    
+    
+    <script>
+        $(document).ready(()=>{
+            $('[data-toggle = "tooltip"]').tooltip()
+        })
+
+
+        $(document).ready(()=>{
+            $("#my_btn").tooltip({
+                placement : 'bottom',
+                title : 'Hello',
+                html : true,
+                animation : true
+
+            })
+        })
+
+
+        $(document).ready(()=>{
+            $("#my_btn1").tooltip({
+                placement : 'bottom',
+                delay : 200,
+                title: 'hello',
+                
+                animation : true
+
+            })
+        })
+    </script>
+    
+</head>
+<body>
+
+    <div class="container">
+        <button class="btn btn-outline-primary"
+                        data-toggle="tooltip"
+                        title="This is tooltip">click Me</button>
+
+        <hr>
+
+        <button class="btn btn-outline-secondary"
+                        data-toggle="tooltip"
+                        data-placement="left"
+                        title="left">Left</button>
+
+        <hr>
+
+        <button class="btn btn-outline-success"
+                        data-toggle="tooltip"
+                        data-placement="right"
+                        title="right">right</button>
+
+        <hr>
+
+        <button class="btn btn-outline-warning"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="top">top</button>
+
+        <hr>
+
+        <button class="btn btn-outline-info"
+                        data-toggle="tooltip"
+                        data-placement="bottom"
+                        title="bottom">bottom</button>
+
+        <hr>
+        <button class="btn btn-outline-dark"
+                        data-toggle="tooltip"
+                        
+                        title="this is <u>Html <b> Enabled </b> tooltip </u>">Left</button>
+
+        <hr>
+
+        <button class="btn btn-outline-dark"
+                        data-toggle="tooltip"
+                        data-html="true"
+                        title="this is <u>Html <b> Enabled </b> tooltip </u>">Left</button>
+
+        <hr>
+
+        <button class="btn btn-outline-danger" id="my_btn">test</button>
+
+        <hr>
+
+        <button class="btn btn-outline-danger" id="my_btn1">test</button>
+
+        <hr>
+
+    </div>
+
+       
+    
+</body>
+</html>
