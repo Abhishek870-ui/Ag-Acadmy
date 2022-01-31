@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>  
+    
+    <script>
+        $(document).ready(()=>{
+            $("#my-toast-msgs").toast("show")
+            $("#greeting").toast({delay : 3000})
+            $("#greeting").toast("show")
+        })
+
+        $(document).ready(()=>{
+            $(".show-toast").click(()=>{
+                //$('#my_btn').toast({delay : 2000});
+                $('#my_btn').toast({autohide:false});
+                $('#my_btn').toast('show');
+
+            })
+            
+        })
+    </script>
+    
+</head>
+<body>
+
+    <div class="conatiner mt-5">
+        <div class="toast" id="my-toast-msgs">
+            <div class="toast-header">
+                <small class="ml-auto">11min ago</small>
+
+            </div>
+            <div class="toast-body">
+                <p>Et tempor sea rebum tempor elitr nonumy accusam. Vero invidunt voluptua dolor at sanctus ipsum diam ipsum sed, magna consetetur dolor justo lorem dolore et, rebum accusam duo nonumy nonumy. Amet stet tempor elitr accusam duo lorem clita aliquyam ut. Sed erat tempor dolore ipsum clita ipsum justo dolore aliquyam,.</p>
+            </div>
+        </div>
+
+        <div class="toast" id="greeting">
+            <div class="toast-header">
+                <strong>greeting</strong>
+                <small class="ml-auto">11min ago</small>
+            </div>
+            <div class="toast-body">
+                <p>Et tempor sea rebum tempor elitr nonumy accusam. Vero invidunt voluptua dolor at sanctus ipsum diam ipsum sed, magna consetetur dolor justo lorem dolore et, rebum accusam duo nonumy nonumy. Amet stet tempor elitr accusam duo lorem clita aliquyam ut. Sed erat tempor dolore ipsum clita ipsum justo dolore aliquyam,.</p>
+            </div>
+        </div>
+
+<br>
+<br>
+<hr>
+<hr>
+<br>
+<br>
+
+
+       
+        <button class="btn btn-outline-danger show-toast" >toast</button>
+        <div class="toast" id="my_btn" style="margin: 50px auto;">
+          <div class="toast-header">
+            <strong>We miss u</strong>
+            <small class="ml-auto">2 min ago</small>
+            <button class="close ml-2 mb-1" data-dismiss="toast">&times;</button>
+
+          </div>
+          <div class="toast-body">
+            Ipsum ipsum tempor tempor erat labore ea erat invidunt sanctus voluptua, eos et invidunt dolore erat, sed sadipscing lorem at takimata. Magna kasd sanctus diam voluptua. Eirmod sanctus ipsum ipsum diam, ut amet ipsum stet invidunt. Kasd lorem ipsum ipsum clita lorem ea sea rebum takimata. Nonumy ut amet ipsum.
+          </div>
+
+
+
+          <br>
+<br>
+<hr>
+<hr>
+<br>
+<br>
+
+
+        
+    </div>
+    
+                   
+</body>
+</html>
